@@ -1,5 +1,21 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 3](#day-3)
+#### April 17th, 2019
+**Today's Progress**:
+- Stood up an Algo VPN server and connected to it
+
+**Thoughts:** Whoa! Today took quite a diversion from my plans yesterday. I woke up feeling anxiety about life stuff I ignored debugging the VPC configuration issue yesterday. Thinking about where I'd do that work, I realized I didn't have a VPN server configured to work with my personal laptop. That meant I was confined to working in my apartment until I could secure my traffic somewhere besides my apartment. So I bumped off the plans from yesterday and instead used [Algo](https://github.com/trailofbits/algo) to spin up a VPN server on AWS. What ended up being the issue is configuring my Ubuntu 18.04 machine as the client to connect to the Algo server. After the instructions in the Algo docs weren't working out for me I just googled it. Following [this blog post](https://computingforgeeks.com/connecting-to-algo-vpn-server-from-linux-and-android-devices/) to set up a [wireguard VPN tunnel](https://www.wireguard.com/) worked out well! Then I went to the coffee shop and spent several hours sorting out the rest of my life besides the 100 days of code. It feels great to be able to work from somewhere besides my apartment now that I have my own VPN server to secure my traffic. Back to CloudFormation tomorrow! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** (adding this because it keeps me organized and motivated)
+- Open an issue with Algo asking about configuring Ubuntu 18.04 desktop machines to use the Algo VPN server
+- Spin up an EC2 in a VPC, SSH into it, and load a webpage on port 80
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Import an EC2 into a VPC CloudFormation template, deploy it, and test it works as expected (SSH & HTTP). Yay modular CloudFormation templates!
+
 ### [Day 2](#day-2)
 #### April 16th, 2019
 **Today's Progress**: 
