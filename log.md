@@ -1,5 +1,24 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 4](#day-4)
+#### April 18th, 2019
+**Today's Progress**:
+- Opened an issue with Algo asking about configuring Ubuntu 18.04 desktop machines to use the Algo VPN server
+- Spun up an EC2 in a VPC with CloudFormation, SSHed into it, and loaded a webpage on port 80
+
+**Thoughts:** Oh! Feeling awesome! Deployed my first CloudFormation template using the AWS CLI! What I'm most happy about though is I read through the template to ensure I understood the resources being spun up, the purpose of the different portions of the template, and how they interact together. The AWS Solutions Architect certifications I have really helped with the "Why do I need this block of yaml?" etc. . I made sure to learn how to validate the template, and it worked the first time, which was great. I learned some peripheral things as well from the different AWS CloudFormation configurations, such as a [different way for expressing time passed](https://en.wikipedia.org/wiki/ISO_8601#Durations). 
+
+Earlier in the day I had [commented on an Algo issue](https://github.com/trailofbits/algo/issues/1021#issuecomment-484512823) linking to the blog post I had used instead of their documentation. Turns out there is an Algo doc already for doing the same WireGuard configuration as was in the blog post! Glad to see my circumstance was already covered, and it was great to get a response so quick pointing me to the appropriate place in their docs. 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Import an EC2 into a VPC CloudFormation template, deploy it, and test it works as expected (SSH & HTTP). Yay modular CloudFormation templates!
+- Force the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 3](#day-3)
 #### April 17th, 2019
 **Today's Progress**:
