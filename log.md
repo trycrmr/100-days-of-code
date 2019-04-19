@@ -1,5 +1,20 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 5](#day-5)
+#### April 19th, 2019
+**Today's Progress**:
+- (In Progress) Import an EC2 into a VPC CloudFormation template, deploy it, and test it works as expected (SSH & HTTP). Yay modular CloudFormation templates!
+
+**Thoughts:** So close! Currently one CloudFormation template of an Internet Gateway is successfully being imported (i.e. a "nested stack", as I understand it) into another CloudFormation template that creates a VPC, EC2, and wires the things up. I chose an Internet Gateway as my first import because it doesn't have many parameters to map. When I run the parent template it fails because it thinks the Internet Gateway doesn't exist in the Attach Gateway step (i.e. resource type). Obviously, they're related. I'm sure the imported template is being imported because CloudFormation creates a stack for it in the console. However, I suppose the Attach Gateway resource type isn't being associated with the Internet Gateway. Tomorrow's first step is going to be porting the Attach Gateway resource type into the Internet Gateway imported template, which will require updating the parameters to include the VPC. Hopefully that resolves the situation! I wonder if certain resource types need to be grouped together in nested stacks; Hmmmm... to be continued tomorrow! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Force the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 4](#day-4)
 #### April 18th, 2019
 **Today's Progress**:
