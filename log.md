@@ -1,5 +1,47 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 6](#day-6)
+#### April 20th, 2019
+**Today's Progress**:
+- Import an EC2 into a VPC CloudFormation template, deploy it, and test it works as expected (SSH & HTTP). Yay modular CloudFormation templates!
+
+**Thoughts:** Yay! Nested import of an Internet Gateway is working! The trick was using the GetAtt intrinsic function to reference the Internet Gateway. When the resource is within the same CloudFormation template, it seems properties of a resource type can be referenced by referencing the resource in the template. Note how the "GatewayId" property is referenced in... 
+
+...this (nested stack)...
+```yaml
+  Route:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId:
+        Ref: RouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !GetAtt InternetGateway.Outputs.InternetGateway
+```
+
+...versus this (same template)...
+```yaml
+  Route:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId:
+        Ref: RouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId:
+        Ref: InternetGateway
+```
+
+I'm not 100% convinced I completely understand this, but at least I realize there is a difference here that can trip things up. I think it has something to do with referencing blocks of yaml in the same file versus referencing blocks of yaml via a nested stack output. 93+ more days to figure it out! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Force the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 5](#day-5)
 #### April 19th, 2019
 **Today's Progress**:
