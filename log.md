@@ -1,5 +1,23 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 7](#day-7)
+#### April 21st, 2019
+**Today's Progress**:
+- Created and played a private sporcle to learn the list of patterns in [Martin Fowler's Patterns of Enterprise Application Architecture](https://www.martinfowler.com/books/eaa.html)
+
+**Thoughts:** Today took a left turn when it crossed my mind to finally crack open Patterns of Enterprise Application Architecture by Martin Fowler. My brother gave it to me for Christmas. After browsing the table of contents I opted to create some way of memorizing the most glossary-like section of the book, the "List of Patterns". Where an author typically takes a few paragraphs or more to explain something, the glossary forces them to put it in the most concise language possible. Starting with the glossary does add complexity and can seem ambiguous, but it allows the actual textbook reading to provide clarity to the definitions. I like figuring out how the author distilled down to the definition, instead of attempting to distill down to my own definition while reading, then using the glossary as a reference, where the definition could confuse me more if the definition I created in my mind doesn't closely resemble the definition the author came up with. 
+
+I created a sporcle of the definitions; It ended up being a great way to gamify the learning! I tweaked the rules and ended up landing on a minesweeper type game, where any wrong answer would end the game. When I lost I could reference the book. I think my longest streak was nine in a row out of fifty-one. Not bad for the first day, I think! The sporcle is still in draft because I can't figure out how to show the user the correct answer on the one they got wrong. It doesn't seem to be in the game configurations, unfortunately. I'm looking forward to incorporating fifteen minutes of this sporcle into my morning routine until I'm acing it! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Force the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 6](#day-6)
 #### April 20th, 2019
 **Today's Progress**:
