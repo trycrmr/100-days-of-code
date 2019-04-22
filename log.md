@@ -1,5 +1,22 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 8](#day-8)
+#### April 22nd, 2019
+**Today's Progress**:
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Continue reading Patterns of Enterprise Application Architecture
+
+**Thoughts:** Life ended up making this a lighter day as far as 100 days of code activities go. However, correctly matched 31 definitions in a row! Getting better recognizing the Patterns of Enterprise Application Architecture terms! Then began working my way through the introduction and Part 1: Narratives. While reading a phrase "These are my people" popped into my head as I thought of any other IT professional who had read this textbook. That validated reading Patterns of Enterprise Application Architecture as a fruitful activity! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Force the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 7](#day-7)
 #### April 21st, 2019
 **Today's Progress**:
