@@ -1,5 +1,32 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 9](#day-9)
+#### April 23rd, 2019
+**Today's Progress**:
+- Continue reading Patterns of Enterprise Application Architecture
+- Listened to [a podcast about Curt Micol's experience with Terraform](https://player.fm/series/packet-pushers-full-podcast-feed-1402332/full-stack-journey-027-understanding-infrastructure-as-code-and-terraform-with-curt-micol)
+
+**Thoughts:** Life this week has me in a car or, at the very least, out of a chair, so I had to find ways to continue fulfilling the 100 days of code challenge. [Packet Pushers podcast](https://player.fm/series/packet-pushers-full-podcast-feed-1402332) had an episode dedicated to Curt Micol's experience with Terraform. This was a fantastic episode; I love a pragmatic assessment of leading edge technologies, and this podcast delivered on that. 
+
+Curt brought up the idea of "Defensive Terraform". I've only listened to the podcast once through, but what I gathered is that once a Terraform script is run it's difficult to tie the infrastructure changes to future "runs" of that Terraform script. If any changes to the infrastructure that was created had occurred Terraform would stop the execution of its current build. I find this strange; I think CloudFormation has a feature to detect, what AWS calls, "drift" in CloudFormation templates. It makes sense that, if there is a GUI to alter infrastructure, that GUI could be used and an infrastructure-as-code offering should account for that. 
+
+The "Defensive Terraform" idea comes from a place where editing one's Terraform scripts could result in consternation throughout the team if someone else were working on or using that Terraform script. This was resolved, I think, by hashing each Terraform script when it was changed, then naming the script with that hash (?maybe?). If that hash had changed, then a different script was being run that expected, and the Terraform script would abort. 
+
+Honestly, this feels heavy handed to me. I'm fascinated by Terraform. AWS is what I'm familiar with, so it was natural and convenient to pursue CloudFormation during my 100 days of code, but I expected I would attempt the same results with Terraform at some point. I think AWS solves this by detecting drift in different CloudFormation Stacks, then only changing the infrastructure where the Stack differs from the existing infrastructure. 
+
+By extension Curt does not agree with applying a "modular" approach to infrastructure-as-code. This was a primary tenant of my interest in CloudFormation. I think there is fantastic potential in having a static web server template that all applications use, with the ability to sprinkle their application-specific configurations into the template. CloudFormation could provide this (with an abstraction where needed), but Curt's objection was something along the lines of different teams altering their own infrastructure-as-code scripts could cause breakages in other team's scripts. This makes to ideal to edit one script as a whole. 
+
+Definitely listen to the podcast and come up with your own opinions! I've only listened to it once; Most insightful podcasts I listen to several times, and this is one of those podcasts for sure!
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- Force the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 8](#day-8)
 #### April 22nd, 2019
 **Today's Progress**:
