@@ -4,7 +4,7 @@
 #### April 24th, 2019
 **Today's Progress**:
 - Read through the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
-- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- Did some practice questions for the AWS Certified DevOps Engineer - Professional exam
 
 **Thoughts:** Looks like studying to be a Certified DevOps Engineer is the natural next step! In assessing my ambitions compared with my original plan for the 100 days of code, I found that I wanted to solidify my knowledge deploying codebases in an automated way. The thing I'm not sure about yet is handling application-level configurations. I've done this in the workplace using Jenkins Pipelines, but I want to ensure this is the "AWSy way" to do things. That had me browsing the AWS DevOps Engineer certification page. 
 
