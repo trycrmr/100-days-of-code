@@ -1,5 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 10](#day-10)
+#### April 24th, 2019
+**Today's Progress**:
+- Read through the [different validation errors](https://aws.amazon.com/premiumsupport/knowledge-center/cloudformation-template-validation/) to happen so I can recognize them quickly in the future
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** Looks like studying to be a Certified DevOps Engineer is the natural next step! In assessing my ambitions compared with my original plan for the 100 days of code, I found that I wanted to solidify my knowledge deploying codebases in an automated way. The thing I'm not sure about yet is handling application-level configurations. I've done this in the workplace using Jenkins Pipelines, but I want to ensure this is the "AWSy way" to do things. That had me browsing the AWS DevOps Engineer certification page. 
+
+It was ridiculous how nearly every domain the exam covers is what I'm interested in learning! There were several reasons why I didn't review the exam criteria much previously, not the least of which being I didn't want to use my 100 days of code to get certifications in lieu of practically applying whatever the acumen the certification was supposed to test for. I value practical experience over paper. But the act of studying for the DevOps Engineer certification should point me in the direction of the best practices. Later, I can exercise implementing those best practices. 
+
+Nothing really to say about reading through the validation errors. They're pretty standard and what you'd expect. Looking forward to running through more practice questions tomorrow for the AWS DevOps Engineer certification! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 9](#day-9)
 #### April 23rd, 2019
 **Today's Progress**:
