@@ -1,5 +1,25 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 11](#day-11)
+#### April 25th, 2019
+**Today's Progress**:
+- Did 20 more practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** Life is preventing me from keeping the pace I want with 100 days of code things, but my days should get more focused next week. A validating aspect of this studying is I'm getting enough questions correct that I'm actually getting a passing score in aggregate! It's barely passing, but I'm glad my workplace experience, general interest, and other certification studying is overlapping. 
+
+A few days ago I listened to a Packet Pushers podcast that disagreed with creating modular Terraform scripts. Interestingly enough, there was a practice question that implied CloudFormation's nested stacks should be used to delegate out responsibilities of different portions of an architecture to other teams in an organization! That makes sense, but I can understand the concern of the individuals on Packet Pushers. There would have to be some harmony between other team's making changes and overall application oversight of those changes and how they're applied. My gut reaction is I'd rather have individual teams responsible for their whole CloudFormation scripts, with a library of nested stacks created by security/web tier/database experts in the organization they can reference. On occasion, the appropriate expert could audit the related portion of the CloudFormation template to assess how the team is handling, say, security, based on the organization's internal recommendations. Something like that, maybe. The VPC they deploy to should probably be an overarching, default stack whether the application is internally or externally facing, but that's it. 
+
+Tomorrow will be another day of AWS DevOps Engineer questions. That will happen in the morning, then seeing Avengers Endgame in the early afternoon! Happy Friday! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 10](#day-10)
 #### April 24th, 2019
 **Today's Progress**:
