@@ -1,5 +1,29 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 12](#day-12)
+#### April 26th, 2019
+**Today's Progress**:
+- Did another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** Another day of practice questions! A sign that I'm in the right field is a really enjoy doing these practice questions. Most of them are scenario-based, which puts me in a different mindset than I am typically in. At times the context they describe is broad enough where the approach in reality is subjective. The problem can be solved in several ways. When this happens, it's more an exercise in test-taking skills, giving the answer the question is asking for versus the answer that, in the real world, would probably be a fine solution. It's just not the solution that answer is looking for. It's usually between two answers (the others can be easily ruled out) so it's pretty easy to find the buzzwords that indicate the ideal answer. "Cost-effective", "real-time", "deploy quickly" point towards less resources & temporary, whatever answer references Kinesis, and whatever answer references Elastic Beanstalk, respectively. Nine times out of ten this works out.
+
+It feels necessary to shed some light on how I am prepping for the AWS DevOps Engineer certification exam for context. I study best for tests with practice questions and answers. AWS doesn't publish exactly how many questions are on the AWS DevOps Engineer certification exam, but, assuming eighty over three hours like the Solutions Architect exams, taking two minutes per question allows one to finish the exam in the time alloted. I set a timer for ten minutes, then aim to complete five questions within that time. Afterwards, I set another timer for ten minutes to review my results and the answer's justifications from WhizLabs. This keeps me from surfing the web too long. The time pressure also keeps me focused. Something about racing against the clock puts me on edge in a good way. 
+
+So if I do twenty questions in a day it means I spent about an hour and twenty minutes testing myself and reviewing content. It's easy just to blow through twenty questions, but the learning happens when reviewing the answers. An added bonus is I can assess my progress at any time. Currently, I'm hovering around getting 70% of the questions correct. Considering that's technically enough to get the certification and I'm early in my studying, I expect this number to rise. It's even more accurate because each question is one I haven't seen before. Once I get through the 400 questions I have from WhizLabs I'll have to start over with questions I've already seen, but by that time I should be averaging high enough to be confident in sitting for the exam. 
+
+This way of studying only works if it fits the exam format and I can get a significant cache of questions with answers and answer justifications, but when those pieces come together this is a super effective way of learning for me. However, it's definitely learning just to get the paper; Practically applying what the questions are asking makes the certification actually worth something. In the near term I think I'll keep going with these practice questions, but spend time doing something else not necessarily AWS-related that I wanted to learn during my 100 days of code. Then, in about twenty days when I finished the four hundred questions, I'll probably sit for the exam, then get back to experiential learning versus book-learning. 
+
+Posting early today because I'm seeing Avengers: Endgame at 1130am and I bet I won't be interested in working after that :-) . Happy weekend!
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 11](#day-11)
 #### April 25th, 2019
 **Today's Progress**:
