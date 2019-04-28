@@ -1,5 +1,25 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 13](#day-13)
+#### April 27th and 28th, 2019
+**Today's Progress**:
+- Did another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** Life had me on the move for the whole day yesterday. It was my first missed day so far. I got lots done, just not 100 days of code things. Hopefully it won't happen again! I'm ensuring I actually do 100 days by counting this as day 13, but accounting for the April 27th and 28th. 
+
+Today I did another twenty practice questions. I'm definitely learning because I get more opinionated about the answers to the questions. At times, it can feel like something I've learned from previous questions contradicts what I learn from newer questions. Most of the time the explanation spells out the difference, but occasionally it doesn't. This can be frustrating, but I had this experience before prepping for the AWS Solutions Architect Professional exam. 
+
+There have been several cases around handling log files for analysis given business requirements from several parties. This is a really neat and practical system, incorporating streaming aspects with analytics. It feels like a pretty common experience across architectures, and it's getting me excited to practice building such a ubiquitious OLTP to OLAP setup. The patterns here can be replicated across any sort of streaming data into an analytical, persistent data store. Questions like these have me longing for a time when I switch back to pragmatic drilling with AWS services. Actually getting the certification is pulling at my like a strong magnet, so I'll probably follow through, but, oh boy, it'll be a blast standing up the architectures I'm being asked about! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 12](#day-12)
 #### April 26th, 2019
 **Today's Progress**:
@@ -7,7 +27,7 @@
 
 **Thoughts:** Another day of practice questions! A sign that I'm in the right field is a really enjoy doing these practice questions. Most of them are scenario-based, which puts me in a different mindset than I am typically in. At times the context they describe is broad enough where the approach in reality is subjective. The problem can be solved in several ways. When this happens, it's more an exercise in test-taking skills, giving the answer the question is asking for versus the answer that, in the real world, would probably be a fine solution. It's just not the solution that answer is looking for. It's usually between two answers (the others can be easily ruled out) so it's pretty easy to find the buzzwords that indicate the ideal answer. "Cost-effective", "real-time", "deploy quickly" point towards less resources & temporary, whatever answer references Kinesis, and whatever answer references Elastic Beanstalk, respectively. Nine times out of ten this works out.
 
-It feels necessary to shed some light on how I am prepping for the AWS DevOps Engineer certification exam for context. I study best for tests with practice questions and answers. AWS doesn't publish exactly how many questions are on the AWS DevOps Engineer certification exam, but, assuming eighty over three hours like the Solutions Architect exams, taking two minutes per question allows one to finish the exam in the time alloted. I set a timer for ten minutes, then aim to complete five questions within that time. Afterwards, I set another timer for ten minutes to review my results and the answer's justifications from WhizLabs. This keeps me from surfing the web too long. The time pressure also keeps me focused. Something about racing against the clock puts me on edge in a good way. 
+It feels necessary to shed some light on how I am prepping for the AWS DevOps Engineer certification exam for context. I study best for tests with practice questions and answers. AWS doesn't publish exactly how many questions are on the AWS DevOps Engineer certification exam, but, assuming eighty over three hours like the Solutions Architect exams, taking two minutes per question allows one to finish the exam in the time alloted. I set a timer for ten minutes, then aim to complete five questions within that time. Afterwards, I set another timer for ten minutes to review my results and the answer's justifications from WhizLasdbs. This keeps me from surfing the web too long. The time pressure also keeps me focused. Something about racing against the clock puts me on edge in a good way. 
 
 So if I do twenty questions in a day it means I spent about an hour and twenty minutes testing myself and reviewing content. It's easy just to blow through twenty questions, but the learning happens when reviewing the answers. An added bonus is I can assess my progress at any time. Currently, I'm hovering around getting 70% of the questions correct. Considering that's technically enough to get the certification and I'm early in my studying, I expect this number to rise. It's even more accurate because each question is one I haven't seen before. Once I get through the 400 questions I have from WhizLabs I'll have to start over with questions I've already seen, but by that time I should be averaging high enough to be confident in sitting for the exam. 
 
