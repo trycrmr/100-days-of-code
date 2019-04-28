@@ -9,7 +9,9 @@
 
 Today I did another twenty practice questions. I'm definitely learning because I get more opinionated about the answers to the questions. At times, it can feel like something I've learned from previous questions contradicts what I learn from newer questions. Most of the time the explanation spells out the difference, but occasionally it doesn't. This can be frustrating, but I had this experience before prepping for the AWS Solutions Architect Professional exam. 
 
-There have been several cases around handling log files for analysis given business requirements from several parties. This is a really neat and practical system, incorporating streaming aspects with analytics. It feels like a pretty common experience across architectures, and it's getting me excited to practice building such a ubiquitious OLTP to OLAP setup. The patterns here can be replicated across any sort of streaming data into an analytical, persistent data store. Questions like these have me longing for a time when I switch back to pragmatic drilling with AWS services. Actually getting the certification is pulling at my like a strong magnet, so I'll probably follow through, but, oh boy, it'll be a blast standing up the architectures I'm being asked about! 
+There have been several cases around handling log files for analysis given business requirements from several parties. This is a really neat and practical system, incorporating streaming aspects with analytics. It feels like a pretty common experience across architectures, and it's getting me excited to practice building such a ubiquitious OLTP to OLAP setup. The patterns here can be replicated across any sort of streaming data into an analytical, persistent data store. 
+
+Questions like these have me longing for a time when I switch back to pragmatic drilling with AWS services. Actually getting the certification is pulling at my like a strong magnet, so I'll probably follow through, but, oh boy, it'll be a blast standing up the architectures I'm being asked about sometime during these 100 days! 
 
 **Link to work:** 
 - Nothing for today
