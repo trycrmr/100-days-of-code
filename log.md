@@ -5,7 +5,9 @@
 **Today's Progress**:
 - Did another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
 
-**Thoughts:** 
+**Thoughts:** Similar score to yesterday! Things are coming together. Still learning new things. For example, the term "Dead Letter Queue" is a message queue that other queues send unsuccessfully processed messages for deep analysis. Using AWS Config might've been an option I could have used to generate a report of configuration changes made throughout a given period at my last job (maybe, I have to validate this one). Stuff like this! 
+
+Still getting bored with just posting that I did more questions. But know that this is not the only iron in the fire :-) .  
 
 **Link to work:** 
 - Nothing for today
