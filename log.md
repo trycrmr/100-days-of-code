@@ -1,5 +1,37 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 15](#day-15)
+#### April 30th, 2019
+**Today's Progress**:
+- Did another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
+### [Day 14](#day-14)
+#### April 29th, 2019
+**Today's Progress**:
+- Did another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** Well, well, well! I scored 15% higher on my AWS DevOps Engineer questions today! Feeling pretty pleased, but I know it's prudent to temper myself. I'll have days where I drop by 15%, but I was due for some better results after doing about 100 questions so far. 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 13](#day-13)
 #### April 27th and 28th, 2019
 **Today's Progress**:
