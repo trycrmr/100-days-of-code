@@ -1,5 +1,25 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 16](#day-16)
+#### May 1st, 2019
+**Today's Progress**:
+- Did another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** Scored dropped a bit but I learned a bunch from the questions I got wrong. Such as: 
+- Jumbo Frames are ethernet frames that handle more than 1500 bytes of data. I understand it as being able to send more data per packet. When setting up a high compute cluster on AWS [you can set the Maximum Transmission Unit setting on a linux box to upwards of 9000 bytes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/network_mtu.html#jumbo_frame_instances)! That's six times more data per packet! Neat! 
+- EBS snapshots are actually stored on S3. So AWS's EC2 services can be up, but if your deployment scripts presume your EC2s will use an EBS volume and S3 is down, your deployment scripts will probably not work.
+
+Good times! 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 15](#day-15)
 #### April 30th, 2019
 **Today's Progress**:
