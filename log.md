@@ -3,15 +3,20 @@
 ### [Day 17](#day-17)
 #### May 2nd, 2019
 **Today's Progress**:
-- xboa transfer fees & transfer $ to marcus
-- xworkout
-- Get website started for Grounded IT Solutions
-- Do another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+- Registered a domain for my LLC
+- Got familiar with Gatsby JS and set up a development project
+- Began wiring up an email component with a lambda function that would then post to Google Sheets to capture emails of folks interested in getting updates about my LLC
 
-**Thoughts:** 
+**Thoughts:** Finally took that breather from AWS DevOps Engineer questions to get started with a brochure site for my LLC! I gave Gatsby JS a look because, from what I understand about it, it has potential to set up a nice, simple workflow for customer's to alter a brochure WordPress site, then build it through Gatsby and deploy it on AWS as a static site (super cheap to maintain and globally performant). It seemed able to do this, so went through the super quick hello world and began refactoring that into my LLC's website. 
+
+I'm not ready to accept contract work yet, so the website would end up being a nice looking landing page with an email form for general inquires. I thinking this through I figured it would be alright to start by writing these emails to a Google spreadsheet using Google's Sheets API proxied through a Node.js script on an AWS Lambda function. It would make it easy to port to data to another data store eventually and copy/paste those emails into a general update newsletter for those interested in the LLC whenever I wanted to give an update. 
+
+The primary learning ended up being setting up a service account to use to authenticate the Lambda's request to Google's Sheets API. I don't love how Google's API and Cloud interface redirects around their different services. I'm not sure if I'm in a quickstart or in their identity and access management at times. The primary way to tell is by hovering over their side menu to see the title. Some links I clicked had me confused as to why I was directed places, but that's probably more due to my lack of familiarity with Google Cloud and their services. No better time to learn than the present! 
+
+So today kind of stumbled into building a cross-Cloud service and a landing page. I don't want to spend more than a few days on this, but I don't think it will take more than a few days, if that. 
 
 **Link to work:** 
-- Nothing for today
+- Nothing for today...but coming soon! 
 
 **Tomorrow** 
 - 15 minutes of the Patterns of Enterprise Application Architecture sporcle
