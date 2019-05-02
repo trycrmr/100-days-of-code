@@ -1,5 +1,24 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 17](#day-17)
+#### May 2nd, 2019
+**Today's Progress**:
+- xboa transfer fees & transfer $ to marcus
+- xworkout
+- Get website started for Grounded IT Solutions
+- Do another 20 practice questions for the AWS Certified DevOps Engineer - Professional exam
+
+**Thoughts:** 
+
+**Link to work:** 
+- Nothing for today
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 16](#day-16)
 #### May 1st, 2019
 **Today's Progress**:
