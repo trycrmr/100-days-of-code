@@ -1,5 +1,27 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 18](#day-18)
+#### May 3rd, 2019
+**Today's Progress**:
+- Continued wiring up an email component with a lambda function that would then post to Google Sheets to capture emails of folks interested in getting updates about my LLC
+
+**Thoughts:** One of those days where I read something wrong then overcomplicated things, but now I understand JSON Web Tokens way better than I did before! Some simple node code is reading values from Google Sheets; Tomorrow is switching that to be writes, append a value, deploy it AWS Lambda, then wire up the client to the Lambda. Good stuff! 
+
+Yesterday I created a Google service account to handle communicating between AWS Lambda and Google's API. That generates an email associated with the service account. Adding the permission for the service account to read from the spreadsheet was done by granted the service account permissions through the Google Sheets interface, as if I were sharing a private document with a friend using their email. 
+
+I found this intermingling of interfaces to add permissions for a service account through the actual Sheets web application kind of surprising. AWS and Amazon.com have a natural segmentation with selling products versus using web services. The AWS interface has no need to interoperate via the Amazon.com interface. But, I guess, since Google's long-term business has been selling web services (broadly speaking) it makes sense that some of their GUIs I was familiar with for different purposes now are being used for managing account permissions of integrations between web services. I found it surprising, like when someone you know well does something completely unexpected; "Mom, I didn't know you could do a backflip!!"
+
+Continuing to work on this tomorrow! Either an early morning update or a late day update as I'm running an obstacle course race during the day!
+
+**Link to work:** 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 17](#day-17)
 #### May 2nd, 2019
 **Today's Progress**:
