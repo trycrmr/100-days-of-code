@@ -1,5 +1,24 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 19 & 20](#day-19-20)
+#### May 4th & 5th, 2019
+**Today's Progress**:
+- Introduced myself to AWS's API Gateway to set up API endpoints that can kick off Lambda functions. Successfully connected the two, next is getting the Lambda function to consume the data from the POST request and do the right thing with the submitted data. 
+- Continued wiring up an email component with a lambda function that would then post to Google Sheets to capture emails of folks interested in getting updates about my LLC
+
+**Thoughts:** Making some progress setting up an API that kicks off a Lambda function! Today and yesterday mostly consisted of ironing out the wrinkles in my development and deployment of my first Lambda function. Tomorrow will be working through integration issues iterating over the code I'd like to work with my Lambda function. 
+
+Another hurdle I will have to overcome is setting up my API to use HTTPS. It looks like that will mean deploying an API behind a Network Load Balancer in a VPC. It should be no big deal, but it is more overhead to getting this feature deployed. I wouldn't deploy it without this level of security, so it has got to happen. Fortunately, I enjoy the work, so looking forward to setting it up! 
+
+**Link to work:** 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+
 ### [Day 18](#day-18)
 #### May 3rd, 2019
 **Today's Progress**:
