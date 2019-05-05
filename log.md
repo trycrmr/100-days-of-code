@@ -1,6 +1,6 @@
 # Terry's 100 Days Of Code - Log
 
-### [Day 19 & 20](#day-19-20)
+### [Day 19 & 20](#day-19-&-20)
 #### May 4th & 5th, 2019
 **Today's Progress**:
 - Introduced myself to AWS's API Gateway to set up API endpoints that can kick off Lambda functions. Successfully connected the two, next is getting the Lambda function to consume the data from the POST request and do the right thing with the submitted data. 
