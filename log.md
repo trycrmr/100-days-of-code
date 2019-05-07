@@ -1,5 +1,23 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 22](#day-22)
+#### May 7th, 2019
+**Today's Progress**:
+- Wrapped up configuring "server-side" setup with API Gateway kicking off a Lambda function to store form data!
+
+**Thoughts:** Finished configuring API Gateway and Lambda to handle form data! I was getting a bit frustrated because it was taking too long to get into a Node.js coding groove. Things finally started clicking today. It felt like a matter of shaking the rust off as it has been several weeks since I've had head down coding sessions. Next up is writing the client side landing page; Looking forward to getting my hands dirty with GatsbyJS! 
+
+**Link to work:** 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- Write client side using GatsbyJS
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 21](#day-21)
 #### May 6th, 2019
 **Today's Progress**:
