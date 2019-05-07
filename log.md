@@ -1,5 +1,25 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 21](#day-21)
+#### May 6th, 2019
+**Today's Progress**:
+- Looked into AWS SAM (Serverless Application Model), and installed the local tooling
+- Iterating over my Lambda function for storing data in a Google sheet
+
+**Thoughts:** Learning about how to handle builds with Lambda! I do have a development flow going, but it involves writing code locally, creating a .zip file, uploading the .zip file via AWS's Lambda console, identifying a local file to use as the test HTTP request in vscode (every time), then testing the Lambda function! 
+
+I'm definitely missing something in my build flow; A close friend mentioned that I should be running everything locally. I did install SAM, though it's possible I'm not using it properly. I am definitely running the Lambda function that's hosted on AWS, but, based on what I learned today, SAM is supposed to test everything locally in docker containers. This is desireable as I'm currently adding to my Lambda request count in order to iterate over my Lambda code. This clearly counts towards my overall costs, though the first 1 million Lambda requests are free. I presume it wouldn't do this if I was able to test my Lambda code on my local machine. If I hit 1 million Lambda requests this month cheers to me because that means I'm popular for some reason (or bots) :-) . 
+
+**Link to work:** 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 19 and 20](#day-19-and-20)
 #### May 4th & 5th, 2019
 **Today's Progress**:
