@@ -1,5 +1,28 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 23](#day-23)
+#### May 8th, 2019
+**Today's Progress**:
+- Deployed a test API endpoint using API Gateway
+- Wired up a simple form to the api and validated I could submit a value through the form that gets stored in the Google spreadsheet
+
+**Thoughts:** Wired up simple client with the API! Pretty straightforward day refactoring a React form to post the form data to the API I've been setting up the past few days. Now the whole flow is complete: A user will be able to visit my website, submit their email, then that email will be sent to an API endpoint that kicks off a Lambda function that appends the email to a list of emails in a Google spreadsheet. Google Sheets will then notify me that someone has added their email. 
+
+I guess this is technically my first "serverless" application. I wanted a custom front-end that could be served as a static file, I wanted to be able to collect leads of folks interested in my company, and I wanted the whole set up to be as cheap and robust as possible. As the company will be regional in nature and quite small, I don't expect much activity. Having a server deployed and running 24 hours a day is not really worth it. This is where using Lambda makes sense. I doubt I'll accrue more traffic than API Gateway and Lambda's free tiers, so, practically speaking, the back-end of my website is free! That's worth a chuckle. Since the front-end is just a lightweight static file I expect load times will be very quick. Not a bad approach for a company promoting pragmatic IT solutions! 
+
+Next steps are making the website attractive, professional, lightweight, and maintainable. That should take the weekend, so expect a link soon! 
+
+**Link to work:** 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- Write client side using GatsbyJS
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 22](#day-22)
 #### May 7th, 2019
 **Today's Progress**:
