@@ -1,5 +1,24 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 24](#day-24)
+#### May 9th, 2019
+**Today's Progress**:
+- Poked around React's documentation covering gaps in my understanding and confirming best practices (Parcel, Next.js, styling, and ajax calls)
+- Continued working on a website using GatsbyJS. Learned more about GatsbyJS's set up and ecosystem. 
+
+**Thoughts:** Getting a handle of GatsbyJS and the client-side is coming together! When initially working with GatsbyJS I was feeling a little confused. I haven't written React consistently for awhile now, worked with GraphQL, or used some of the build tooling I was stumbling across. So I took a step back and started looking through React's and GatsbyJS's docs. Once I had those gaps filled and began browsing the codebase again my thoughts were coalescing and results started flowing. By the end of my time working on this today the client-side is really starting to come together and look halfway decent for a placeholder, "coming soon" style site. 
+
+**Link to work:** 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- Write client side using GatsbyJS
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 23](#day-23)
 #### May 8th, 2019
 **Today's Progress**:
