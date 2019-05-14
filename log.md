@@ -6,7 +6,7 @@
 - Styled a brochure site for my new company
 - Deployed the brochure site as a static site on S3
 - Configured a custom domain for the API Gateway so that I can send requests to api.groundedit.solutions/v#/whatever
-- Began configuring a CloudFront distribution so I can serve the brochure site over HTTPS. It's necessary as I'm collecting interested parties emails. 
+- Configured a CloudFront distribution so I can serve the brochure site over HTTPS. It's necessary as I'm collecting interested parties emails. 
 
 **Thoughts:** Website is live! It's a GatsbyJS client-side served via CloudFront & S3 with an API Gateway API that kicks off a Lambda function that updates a Google Sheet! After missing a few days due to life stuff I wanted to get this website posted today. I had an enjoyable time styling the site, then got strung along as it took a little more than expected to configure S3 bucket to be served from HTTPS. When I got into it I figured it would be configuring S3 to use a public certificate from AWS Certificate Manager. It turns out this has to be configured through CloudFront. Changes to a CloudFront distribution can take up to 20 minutes to take effect, so I found myself making a change to the CloudFront distribution's settings, waiting about 15 minutes for it to deploy, then testing it, rinse and repeat. Lengthy iteration time for sure! This would absolutely be something to consider if debugging a live CloudFront distribution where a CloudFront config was preventing content from being accessed. Clearly, that would be no good. 
 
