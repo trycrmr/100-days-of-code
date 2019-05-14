@@ -1,5 +1,24 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 26](#day-26)
+#### May 14th, 2019
+**Today's Progress**:
+- 20 more questions to study for the AWS DevOps Engineer Professional Certfication
+- Figured out my tech vision for the next six months 
+
+**Thoughts:** Completed 20 more questions studying for the AWS DevOps Engineer Professional Certification and recentered myself after getting Grounded IT Solutions brochure set up how I wanted! Sitting down today I realized I wasn't completely clear with myself on what I wanted to do for the next six months. I knew I would do 100 days of code/cloud, but what for Grounded IT Solutions and earning some revenue? After a refill of [corsica](https://www.lacolombe.com/products/corsica) and a few hours brainstorming I landed on continuing to pursue the AWS DevOps Engineer Professional Certification and releasing one Udemy course a month, starting August 1st, until the end of 2019 (well, technically the last one would be released by January 1st). I should start 2020 with six Udemy courses on AWS stuff and two AWS Professional-level certs to my name! Not a bad 2019 for sure!
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow** 
+- Write client side using GatsbyJS
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 25](#day-25)
 #### May 13th, 2019
 **Today's Progress**:
