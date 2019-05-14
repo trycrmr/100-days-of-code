@@ -1,5 +1,31 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 25](#day-25)
+#### May 13th, 2019
+**Today's Progress**:
+- Styled a brochure site for my new company
+- Deployed the brochure site as a static site on S3
+- Configured a custom domain for the API Gateway so that I can send requests to api.groundedit.solutions/v#/whatever
+- Began configuring a CloudFront distribution so I can serve the brochure site over HTTPS. It's necessary as I'm collecting interested parties emails. 
+
+**Thoughts:** Website is live! It's a GatsbyJS client-side served via CloudFront & S3 with an API Gateway API that kicks off a Lambda function that updates a Google Sheet! After missing a few days due to life stuff I wanted to get this website posted today. I had an enjoyable time styling the site, then got strung along as it took a little more than expected to configure S3 bucket to be served from HTTPS. When I got into it I figured it would be configuring S3 to use a public certificate from AWS Certificate Manager. It turns out this has to be configured through CloudFront. Changes to a CloudFront distribution can take up to 20 minutes to take effect, so I found myself making a change to the CloudFront distribution's settings, waiting about 15 minutes for it to deploy, then testing it, rinse and repeat. Lengthy iteration time for sure! This would absolutely be something to consider if debugging a live CloudFront distribution where a CloudFront config was preventing content from being accessed. Clearly, that would be no good. 
+
+One great thing I learned is that public certificates are free via Certificate Manager and they refresh themselves! Aleviating the concern of HTTPS certificates expiring with no additional cost was a breath of fresh air for sure. 
+
+Looking forward to tomorrow! I'll send this website around to friends and family to ensure it works on their devices, then get back to focusing on getting the AWS DevOps Engineer Professional cert! I want to double-up my studying so I get that credential sooner rather than later and can move on to bigger and better things. Onward and upward! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+- Nothing for today...but coming soon! 
+
+**Tomorrow** 
+- Write client side using GatsbyJS
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 24](#day-24)
 #### May 9th, 2019
 **Today's Progress**:
