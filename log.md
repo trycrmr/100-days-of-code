@@ -1,5 +1,29 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 27](#day-27)
+#### May 15th, 2019
+**Today's Progress**:
+- 20 more questions to study for the AWS DevOps Engineer Professional Certfication
+- Read Gartner's Magic Quadrant report for Cloud Infrastructure as a Service, Worldwide (i.e. IAAS offerings)
+
+**Thoughts:** Dove deep into the [Gartner's 2018 Magic Quadrant for, effectively, IAAS offerings](https://pages.awscloud.com/gartner-2018-cloud-IaaS.html?trk=ar_card)! Recently, when I've described the content of the courses I'll be putting together to other IT professionals/friends there's typically some comment as to the relative success of the different services being discuss in the course. Understanding that each service offering for any company will have success relative to it's competitors, I felt I needed to get a handle on this myself. 
+
+The broadest assessment is comparing IAAS offerings as a whole across cloud providers. I've leaned on Gartner's Magic Quadrant before to orient my opinions, and this report didn't disappoint. Conversationally, people toss around comments like, "Alibaba is going to be big", "Azure is catching up to AWS", or "You should really check out GCP". These comments are well-meaning, but in a big world of online content marketing noise and office/contract/company echochambers it's important to cut straight to the professionals paid to digest it all and voice thought out opinions. 
+
+Note that I'm open to learning about these different Cloud Providers and heir offerings; Starting with AWS will give me the context to understand the technical aspects, then comparing that to other Cloud Providers will significantly accelerate my understanding. This report is a year old and expected to be updated this month. It provided me a snapshot in time view of a state of Cloud Providers. It seems Alibaba has been leveraging its Chinese offerings to provide international offerings, IBM & Oracle have significant IAAS projects slated to enhance and harden their IAAS offerings, Google has been refactoring internal systems as IAAS services to bootstrap their offerings, Microsoft is determined but dealing with the pains of growing fast, and AWS is still, hands-down, the market leader in services and ability to execute. 
+
+Reading a report that's a year old is, on the surface, not a great use of time, but I'd argue it provides a reference point to judge the changes to the 2019 report. Now I'm excited for the updated report that should be published this month. I'll be able to see the evolution of different Cloud Providers over the past year, presuming they all will still be included in the report! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 26](#day-26)
 #### May 14th, 2019
 **Today's Progress**:
