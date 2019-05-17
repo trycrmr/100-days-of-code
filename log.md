@@ -1,5 +1,32 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 28](#day-28)
+#### May 16th, 2019
+**Today's Progress**:
+- Assessed [groundedit.solutions](https://groundedit.solutions) using Google Chrome's audit tools 
+- Addressed an issue with groundedit.solutions a friend pointed out
+- Learned about CloudFront caching! 
+
+**Thoughts:** Resolved a UX issue with website I'd recently published! When making network calls through experience & internet advice I've learned there end up being three states: The request has not been sent, the request has been sent, and the results of the request have been received. I'm treating receiving the event as its own cascade of results. 
+
+When I put together [Grounded IT Solutions](https://groundedit.solutions) I didn't adequately account for the user experience while the network request was being sent. A friend of mine was using our local subway; When she pressed submit she didn't see any response from the UI, then waited for something to happen. Apparently, the network request must have had issues being sent while on the subway (a common phenomenon), so she didn't see the website work as expected. A bug, yay!! In this case the network request probably hung, waiting for a resolution; While that was happening the UI didn't update. So today I resolved that! 
+
+A simple way to do this is to replace the element being pressed with something indicating action is occurring, like a loading icon. I can't critique much because I just messed up this UI situation, but, honestly, it would be great if websites would indicate the progress of processing a particular network request. There isn't any processing here; Just an indication that the individual's email was successfully resolved, so I didn't think through handling the case where the network request itself didn't respond within a few seconds. My friend must have clicked the submit button, lost network access, which caused the webpage to wait on the default network timeouts (usually much longer than three seconds, the standard for giving user feedback I've heard of), and, from her perspective, the website's submit button didn't work at all! Not a great look for a new IT company. When using American Airlines website later this evening I noticed the same situation occurring, so I didn't feel that bad. There's still a place my IT company can help out :-) .
+
+When deploying this update I learned CloudFront defaults to caching distributions for 24 hours. This would mean that users of my website wouldn't see any UX updates for 24 hours?! That's not ideal, so I updated the distribution to refresh itself every hour, with a day being the longest amount of time it should take to refresh from edge locations. So within a day all users should see the ideal behavior. It's worth noting that I'd be fine serving this website from an S3 bucket from the Northern Virginia region taking the global latency in stride, but in order to serve the files over HTTPS I had to associate a certificate with a CloudFront distribution! It would be neat if AWS provided a way to enable HTTPS on S3 buckets for static websites. I could be missing something though as this seems like a pretty straightforward feature to provide.
+
+I have a wedding this weekend; I'm thinking I can continue with my 100 days of code/cloud tomorrow, but Saturday, the day of the wedding, will probably end up being a day off. We'll see! Back to the regular schedule on Monday at the latest. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 27](#day-27)
 #### May 15th, 2019
 **Today's Progress**:
