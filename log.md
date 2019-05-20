@@ -1,5 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 29](#day-29)
+#### May 20th, 2019
+**Today's Progress**:
+- Dug into AWS Cognito
+
+**Thoughts:** Dug into AWS Cognito! One of the practice questions when studying for the AWS Solutions Architect - Professional exam was around creating an online voting solution. It's one of the systems that, from a client-side perspective, is a straightforward CRUD app. However, scaling to handle the load and building reports off the data in real-time requires an appropriate architecture. Clearly, one would want to maintain the integrity of the initial vote, so AWS Cognito or some other indentification solution is essential. 
+
+I'm pretty excited about the approach I took to dive into AWS Cognito! Instead of stepping through the web console using its wizard, I opened up the AWS Cognito CloudFormation documentation and began writing a CloudFormation script as I walked through the web console. Once I've stepped completely through the web console, I should also have a CloudFormation script that should generate the exact same configuration as I had selected in the web console! I can test the two configurations in the same way, resolve any differences, then work from the CloudFormation script going forward! It could be handy to approach other services this way as well, including the ones I already know. 
+
+With a family wedding over the weekend I missed three days in a row -- BAD! But good that I was present with my family. I'm confident I made the right choices; Have to get back on track and not miss any more days consecutively! With no family or travel plans until I am done with my 100 days my excuses can only get worse. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 28](#day-28)
 #### May 16th, 2019
 **Today's Progress**:
