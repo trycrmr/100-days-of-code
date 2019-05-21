@@ -1,5 +1,24 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 30](#day-30)
+#### May 20th, 2019
+**Today's Progress**:
+- Finished configuring an AWS User Pool through the console
+
+**Thoughts:** Getting a handle on AWS Cognito! Finished stepping through configuring a User Pool. It's pretty straightforward, and could be done pretty quickly, but I took the time to understand all the configurations and how to replicate the same configuration in a CloudFormation template. Interestingly, there is a gap or two between the console configuration and what's available in the CloudFormation API. Most notably, [the Verification Type can't be set to "Link" using CloudFormation](https://stackoverflow.com/a/48630404/5935694). 
+
+After configuring the Pool I realized I don't really know how to use it with a codebase. There are several videos online describing how to do this. I made a YouTube playlist of them. Between this update and the next I'll absorb enough from those videos to start building my own demo app and prove I can use the Cognito User Pool as it's meant to be used. Good stuff! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 29](#day-29)
 #### May 20th, 2019
 **Today's Progress**:
