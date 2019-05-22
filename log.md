@@ -1,7 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 31](#day-31)
+#### May 22nd, 2019
+**Today's Progress**:
+- Followed a Youtube tutorial in using The AWS Amplify Authentication API to integrate with AWS Cognito User Pools
+
+**Thoughts:** Followed 2 of the 3 Cloud Path YouTube tutorial videos on configuring a React front-end with AWS Cognito using AWS Amplify! So neat; I'm blown away that I hadn't used AWS Amplify before. As far as I've seen from the authentication API it abstracts so much complexity away when interacting with AWS's services. Since React is my client-side view library of choice these days, AWS Amplify is without a doubt a ridiculously useful asset. 
+
+These [Cloud Path tutorials](https://www.youtube.com/channel/UCTJxrTdQWFGtKxTeincy9uA) are great! The author speaks clearly and attempts to keep things concise while delivering working results. Occasionally there's minor debugging of errors, which could get cleaned up, but the bit of debugging is helpful to see at times. I watched them at 1.5x speed and it was still really easy to understand. Onto Part 3 of this YouTube tutorial tomorrow! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 30](#day-30)
-#### May 20th, 2019
+#### May 21st, 2019
 **Today's Progress**:
 - Finished configuring an AWS User Pool through the console
 
