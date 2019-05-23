@@ -1,5 +1,23 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 32](#day-32)
+#### May 23rd, 2019
+**Today's Progress**:
+- Continued following a Youtube tutorial in using The AWS Amplify Authentication API to integrate with AWS Cognito User Pools
+- Bumped into an issue with AWS SES "delivering" but then not receiving to emails to my email accounts
+
+**Thoughts:** Working through an issue with AWS SES "delivering" emails, but then those emails are not received that's blocking wrapping up the Cognito tutorial; Yay debug day! The [Cloud Path tutorials](https://www.youtube.com/channel/UCTJxrTdQWFGtKxTeincy9uA) are going well as I wrap up Part 3 of their AWS Cognito tutorial. I reached a blocker in following through with the rest of the tutorial when AWS SES was delivering emails, but I wasn't receiving them at the verified gmail address I'm using with AWS SES. After learning a bit about DKIM and reading some SES docs I figured submitted a support ticket was a reasonable step. This seems like a common situation. I remembered this email was also configured to send emails under a different AWS account (an old work account), so wires could be getting crossed on AWS's side. I'm enjoying these tutorials because it has been a good review of writing a React application while teaching me AWS Cognito. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 31](#day-31)
 #### May 22nd, 2019
 **Today's Progress**:
