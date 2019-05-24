@@ -1,5 +1,31 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 33](#day-33)
+#### May 24th, 2019
+**Today's Progress**:
+- Worked through debugging the email situation more
+- Wrapped up the tutorial after switching Cognito configs to send email instead of SES
+- Began working on a voting app React front-end for an AWS Tutorial
+- Read about using Hooks to manage State in React. I'm not sure whether to use Hooks or pull in Redux.
+
+**Thoughts:** Started on a React voting app! I don't plan to turn this into an actual SaaS product. It will be part of a course on handling lots of data at once using AWS SQS and DynamoDB. I figured I'd get started on this while the work with AWS Amplify and AWS Cognito is fresh. 
+
+I'm still not sure why SES wasn't sending emails. I did alter some configurations; Somehow the gmail.com domain was attempting to be verified on SES. I don't remember doing this and I clearly don't have acceess to gmail.com's DNS records, so I removed that. My hope was that was the reason SES wasn't sending emails. It could be part of the problem, but it didn't resolve the situation. The emails were still showing as being delivered, then I wouldn't recieve an email in my inbox. 
+
+Switching the Cognito configuration to send from Cognito's emailing service instead allowed me to receive a verification email. It's nice to know my gmail account can receive emails; So it's not anything there. Later in the tutorial when I should've received another email I didn't. I ended up watching the last ten minutes of the tutorial as I guessed it would be pretty much the same AWS Amplify API calls as I'd already seen in the tutorial. It was, and I moved on.
+
+Getting a feel for using AWS Amplify in a React application was something I didn't realize I'd have to do, but is absolutely essential. Looking forward to getting an initial cut of this voting application codebase together! I expect I'll end up configuring some sort of React app state management (possibly using Hooks), React Router, and AWS Amplify integrations for authentication. At that point I'll get to revisit the SES emailing situation again. Stay tuned! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 32](#day-32)
 #### May 23rd, 2019
 **Today's Progress**:
