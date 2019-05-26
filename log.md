@@ -1,5 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 34](#day-34)
+#### May 26th, 2019
+**Today's Progress**:
+- Wrote a simple application that manages application state using hooks
+
+**Thoughts:** Set up a React app that manages application state using hooks and started building out the features! The React applications I've worked with before generally have used Redux to manage application state. Hooks has been a React feature on the periphery of my dev life for some time now. It felt appropriate to have a closer look at the feature as a state management alternative.
+
+Working with Hooks to manage application state has been fairly straightforward with the assistance of [the use-global-hook npm module](https://www.npmjs.com/package/use-global-hook) described by its author in [this blog post](https://medium.com/javascript-in-plain-english/state-management-with-react-hooks-no-redux-or-context-api-8b3035ceecf8). Technically, I understand the module as a custom hook that handles updating a global state object. I have to give the blog a reread to make sure I understand it fully; I did notice some parallels to how Redux handles updating the state.  
+
+However, I started having trouble debugging some basics at one point. It ended up I had messed up a destructuring assignment, but I realized I wasn't able to view the entire application state object. Redux had the ability to incorporate middleware for handling different cases. I'll probably end up writing my own middleware to give myself the tooling I need if it's not around for hooks yet. I'll want to keep the time I spend on that to a minimum, but I remember Dan Abramov encouraging that approach a few years ago in a podcast. It will be a good learning exercise. Tomorrow should be fun; Features all day on this basic React voting application! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 33](#day-33)
 #### May 24th, 2019
 **Today's Progress**:
