@@ -1,5 +1,31 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 35](#day-35)
+#### May 27th, 2019
+**Today's Progress**:
+- Configured eslint to check for best practices when using Hooks
+- Watched the [introduction to Hooks at React Conf 2018](https://www.youtube.com/watch?v=dpw9EHDh2bM)
+- Learned how to separate global application styles from individual component styling
+- Organized the codebase into different component, container, and App directories
+- Created an AWS Amplify User Pool to use with this React voting app and added the configs to the codebase
+- Configured React Router and validated it worked as expected
+- Attempted to write tests, but was surprised to his an issue with testing the Hooks library I had used, so tabled this. 
+- Sent test emails from SES and they worked, so that's nice. Not sure why I had such trouble the other day
+
+**Thoughts:** React app is getting all organized and configured! Today was a nice mix of learning and accomplishing things. At this point, I'm stepping through all the appropriate configurations to make for a client-side application: How can this be tested, how can styles be organized, how do I want to organize things, how do I handle configs, etc. . The only question of those that I punted on was writing tests. I bumped into an issue where Jest didn't understand the export syntax the custom hook was using. I don't know why this was. It was able to understand the same syntax from other components. When I attempted to add the configs to fix things to the package.json, Create React App let me know that particular Jest configuration was not allowed to be managed unless I ejected my React application from Create React App's configs. I'm not ready to do that because I don't want to mess with build tooling configs too much. This app is for validating I can build a thing that uses AWS Amplify, Cognito, SQS, and DynamoDB to handle global scale writes. I'd rather get through this client-side application portion ASAP in favor of the architecture work. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- Start incorporating AWS Amplify UI components using React Router to configure the proper redirects
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 34](#day-34)
 #### May 26th, 2019
 **Today's Progress**:
