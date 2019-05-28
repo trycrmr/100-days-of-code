@@ -1,5 +1,27 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 36](#day-36)
+#### May 28th, 2019
+**Today's Progress**:
+- Attempted to write my own tooling for outputting the current application state and what action caused the current application state to change
+- Start incorporating AWS Amplify UI components using React Router to configure the proper redirects
+
+**Thoughts:** Wrote a little bit of middleware and began getting auth UI components put together! With the use-global-hook npm module I wanted to have the current state of the application outputted to the console. Ideally, anytime an action was called, the before and after state would get printed. I was able to get the current state to print everytime the useGlobal hook was called, but I had more trouble getting the action to print. I wanted to iterate over the actions object and (...maybe this is the right word...) decorate each action with a function that would print the action and the before/after application state objects. After about an hour of trying a few things, I had to move on to actually progressing getting the authentication flow to work instead of investing too much time into tooling. Every so often I realize I "don't know JavaScript" and I probably could do with a review of Kyle Simpson's books or some coding challenges to continue leveling up my JavaScript skills.
+
+Did lots of laying the groundwork of different components that would act as the authentication flow throughout the application (sign in, sign out, sign up, etc.). Tomorrow I should get to actually hitting the endpoints to interact with the Cognito User Pools via the Amplify API. Once that's done I'll get to submitting my "vote" to the backend; That's when we're cooking with fire and can get to the SQS, DynamoDB, etc. backend architecture work! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- Start incorporating AWS Amplify UI components using React Router to configure the proper redirects
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 35](#day-35)
 #### May 27th, 2019
 **Today's Progress**:
@@ -9,8 +31,8 @@
 - Organized the codebase into different component, container, and App directories
 - Created an AWS Amplify User Pool to use with this React voting app and added the configs to the codebase
 - Configured React Router and validated it worked as expected
-- Attempted to write tests, but was surprised to his an issue with testing the Hooks library I had used, so tabled this. 
-- Sent test emails from SES and they worked, so that's nice. Not sure why I had such trouble the other day
+- Attempted to write tests, but was surprised to hit an issue with testing the Hooks library I had used, so tabled this. 
+- Sent test emails from SES and they worked, so that's nice. Not sure why I had such trouble the other day.
 
 **Thoughts:** React app is getting all organized and configured! Today was a nice mix of learning and accomplishing things. At this point, I'm stepping through all the appropriate configurations to make for a client-side application: How can this be tested, how can styles be organized, how do I want to organize things, how do I handle configs, etc. . The only question of those that I punted on was writing tests. I bumped into an issue where Jest didn't understand the export syntax the custom hook was using. I don't know why this was. It was able to understand the same syntax from other components. When I attempted to add the configs to fix things to the package.json, Create React App let me know that particular Jest configuration was not allowed to be managed unless I ejected my React application from Create React App's configs. I'm not ready to do that because I don't want to mess with build tooling configs too much. This app is for validating I can build a thing that uses AWS Amplify, Cognito, SQS, and DynamoDB to handle global scale writes. I'd rather get through this client-side application portion ASAP in favor of the architecture work. 
 
