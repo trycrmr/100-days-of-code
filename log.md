@@ -1,5 +1,28 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 37](#day-37)
+#### May 29th, 2019
+**Today's Progress**:
+- Continued incorporating AWS Amplify UI components using React Router to configure the proper redirects
+
+**Thoughts:** You can sign up and (almost) sign in using React with AWS Cognito! Incorporating each endpoint seems like it should be pretty trivial from here on out. One obstacle I can see coming up is making sure your user experience aligns with your Cognito User Pool configuration. For example, if the User Pool is configured for users to validate their email using a verification code, then you obviously need to have a component where a user can submit their verification code. 
+
+Juggling the different authentication states was always something I knew I'd have to do. I'm nervous it's going to take a significant amount of time. Hopefully rendering all the components on one page, then showing or hiding the components depending the global state will help with getting the authentication flow sorted. I can refactor those interactions to use React Router to link to container components depending on the same states. That should facilitate that aspect, however that might be overfill as this is pretty much a throwaway application for practice. Getting to building out the AWS architecture is the priority activity of building out this system. 
+
+Yesterday evening I attended [a local talk about using GraphQL and Apollo in a React app](https://www.meetup.com/React-DC/events/261428186). It was great! While listening to the talk I figured AWS must have a hosted solution for GraphQL, but I couldn't put my finger what it was called. Turns out it's [AWS AppSync](https://aws.amazon.com/appsync/). AppSync uses GraphQL and Apollo under the hood. Adding this to the list of AWS solutions I want to prove out using for myself! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- Start incorporating AWS Amplify UI components using React Router to configure the proper redirects
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 36](#day-36)
 #### May 28th, 2019
 **Today's Progress**:
