@@ -1,5 +1,23 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 38](#day-38)
+#### May 30th, 2019
+**Today's Progress**:
+- Continued incorporating AWS Amplify UI components
+
+**Thoughts:** Successfully signed up with email verification and added global app error handling! I am really loving writing a React application with Hooks and managing global state using a custom Hook. So far, I've had no reason to write a class component; All my components are functional components. It's also much less boilerplate code than writing components with classes. It makes me feel like I can move really quickly creating components once the application is laid out. A former tech lead once mentioned how productive he felt once he was able to easily write React components for an application, then reuse those components as needed. I'm getting that same sort of feeling; It's empowering! We'll see what complexities either me or the community run into when React applications with Hooks are more widely used in production. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 37](#day-37)
 #### May 29th, 2019
 **Today's Progress**:
