@@ -1,5 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 39](#day-39)
+#### May 31th, 2019
+**Today's Progress**:
+- "Persisted" authentication state between page refreshes
+- Completed a full sign up and sign in authentication flow
+
+**Thoughts:** React app now maintains authentication between page reloads! Last week when I was following a tutorial the author used the term "persist" to describe handling authentication between page reloads. I'm not sure this is exactly accurate, because really what happens is as soon as the page loads, a network call is made to Cognito to determine whether a user has been authenticated with this particular client. Amplify does have the flag to check the cache first, but, if I remember correctly, it defaults to not check the cache. My point is the authentication doesn't so much "persist" on the client. It's really validated with the backend that this client has already been authenticated. The way I understand it, there is no data persisting on the client that is being checked.
+
+I ran into an issue where I was causing one of my top-level components to rerender every time it attempted to render. Obviously, this was causing a hilarious infinite loop issue :-) . Fortunately, the folks at Facebook have built React to recognize this circumstance as it's happening. React short circuits the infinite loop before it can continue and throws an error. The fix was refactoring the logic to prevent the state changes from kicking off a rerender. I'm honestly not sure rerender is a word, but going with it anyways. Happy Friday! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 38](#day-38)
 #### May 30th, 2019
 **Today's Progress**:
