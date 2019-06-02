@@ -1,5 +1,27 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 40](#day-40)
+#### June 2nd, 2019
+**Today's Progress**:
+- Researched best practices for setting up a new AWS account
+
+**Thoughts:** Researched some best practices around setting up and configuring an an AWS account! Slowly but surely things are coming together for an IT services/training lifestyle business I'm bootstrapping outside of my 100 days of code work. One of the tasks I've been looking forward to is setting up an AWS account from scratch. Besides adopting as many of the best practices I can find, I'll be able to experiment with AWS Organizations, Cross Account Roles, and other interesting capabilities. 
+
+Properly configuring an AWS account is one of those things that comes up frequently in an established organization, but is usually difficult to change. It requires someone high up enough to give approval to, say, enable MFA. Not a huge deal and definitely essential, but it requires middle managers to understand why the change is being made, make the change themselves, then follow up with their direct reports to ensure the rollout is succeessful. In that specific instance there are work stoppages if someone is having trouble configuring their MFA. Someone high enough up has to give the blessing that changing this configuration is worth the possible hit to productivity. Understanding the recommended ways to do this today, configuring the account as such, and learning about how difficult certain configurations would be to change later should make scaling the engineering portion of the business easier down the road. I mean, that's presuming there would be an engineering portion of the business to scale :-) . TBD! 
+
+P.S. I don't like to have "research" days for my 100 days of code. I'd rather produce some sort of result each day. Research, IMO, should be time boxed and should come to something, whether a proof of concept or some deliverable. Fortunately, there is time pressure to get this AWS account spun up ASAP, so results will be coming soon. Also, for about two weeks now I've been following a path to create a React voting application. I'm at a place with that work where I can put a pin in it and pivot to something that is a learning excersise that yields impactful results for my other endeavors versus exclusively a learning exercise. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 39](#day-39)
 #### May 31th, 2019
 **Today's Progress**:
