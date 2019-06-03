@@ -8,28 +8,49 @@
 **Thoughts:** A bunch more reading about best practices when setting up an AWS account; Got a To Do list together to follow tomorrow! 
 
 AWS account to-dos:
+
 Configure AWS Organizations
+
 Configure AWS SSO with G Suite to give read access to all things to anyone in Grounded IT Solutions LLC (https://support.google.com/a/answer/6194963?hl=en)
+
 Use a group alias email with the account (i.e. cloud@groundedit.solutions) 
-- https://www.1strategy.com/blog/2018/04/24/creating-an-aws-account-a-checklist/
+
+https://www.1strategy.com/blog/2018/04/24/creating-an-aws-account-a-checklist/
+
 MFA for at least root user
+
 No access keys on the root account 
+
 Developer level support
+
 IAM policy/role/user for billing access
+
 Enable billing alerts (can these be dynamic? Like, if a bill is within 10% of last month's bill send an alert?)
+
 Create AWS admins group
+
 Create account alias (easy peasy)
+
 Ensure CloudTrail is set to track all regions and enable log file validation. maybe do this https://aws.amazon.com/blogs/big-data/streamline-aws-cloudtrail-log-visualization-using-aws-glue-and-amazon-quicksight/
+
 Use us-east-1
+
 Turn on aws config. No rule checks, just tracking. Double-check after a month if it's costly given my activity. It would be surprising if it's more than $30 and I have no rules.
+
 Create things through the console and using CloudFormation. No restrictions at this point. 
 
 Some other things: 
+
 See about using AWS organizations and follow project-based account structure
-- https://d1.awsstatic.com/whitepapers/cost-optimization-laying-the-foundation.pdf 
+
+https://d1.awsstatic.com/whitepapers/cost-optimization-laying-the-foundation.pdf 
+
 Tagging strategies - https://aws.amazon.com/answers/account-management/aws-tagging-strategies/
+
 Hmmm, not sure which one to go with. Seems like Project-based is best long-term https://aws.amazon.com/answers/account-management/aws-multi-account-billing-strategy/ 
+
 See next steps for MOAR security stuff - https://aws.amazon.com/blogs/security/getting-started-follow-security-best-practices-as-you-configure-your-aws-resources/ 
+
 Use Trusted Advisor to clean things up as necessary - https://aws.amazon.com/premiumsupport/technology/trusted-advisor/ 
 
 **Link to work:**
