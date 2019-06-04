@@ -1,5 +1,27 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 42](#day-42)
+#### June 3rd, 2019
+**Today's Progress**:
+- Began setting up my new AWS account
+
+**Thoughts:** I'm enjoying configuring a new AWS account! Having some trouble getting SSO from G Suite working though. 
+
+Once I was able to set up my business email I was able to follow through on the to do list from yesterday! There are a few things that at first glance aren't so clear. For example, I understand moving towards simplifying UIs, but I think it should come with some sort of toggle tutorial for how to configure some of the basic aspects of that service. For example, I set up AWS Organizations, but I didn't see where in the user interface to configure consolidated billing. I'm presuming that I need to have a bill from one of the accounts associated with that Organization first, but not sure :shrug: . Of course I'll end up browsing the documentation to see what I missed there.
+
+Then I moved onto configuring SSO for G Suite into my AWS account. While the instructions seemed straightforward, I got to a place where it was difficult in Google's G Suite interface to deliniate what role should be associated with what individual. From what I can gather it seems a role needs to be associated with an attribute of a user, such as what Department they are in or what their first name is. Testing that conjecture failed though. I think I'll table this feature and continue moving through the rest of the to do list tomorrow. It makes it so I need to log into one place instead of two each day, so it's nbd. I bet an hour or two of chatting with G Suite support should clear the issue up. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 41](#day-41)
 #### June 3rd, 2019
 **Today's Progress**:
