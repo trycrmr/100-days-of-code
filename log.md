@@ -1,7 +1,35 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 43](#day-43)
+#### June 5th, 2019
+**Today's Progress**:
+- Figured out how to add a custom attribute to G Suite users
+- Tested SSO with the updated custom attribute. No luck. 
+- Enabled MFA for the root user and checked that the root user did not have any active access keys
+- Read about AWS Organizations and configured it appropriately for Grounded IT Solutions's AWS Sccount at this time
+- Created an Admin group with a corresponding administrator policy for the account
+- Created a new user to use instead of the root account and ensured I could log in as that user
+- Aliased the account to make the url for logging in easier to remember
+
+**Thoughts:** Learned the practical uses for AWS Organizations and logged in as an admin user besides the root user, per best practices! Not a crazy day, but an essential one. 
+
+Initially started the day trying my hand at the G Suite SSO again. After stepping away and thinking things through a bit more, I figured there must be a way to add a custom attribute because there are so few. Turns out there is a way; It's an icon on the G Suite page that lists all the users. I tried adding a custom attribute that would map to the AWS Default role for G Suite users. SSO from G Suite to AWS still didn't work, but I feel more confident I'm understanding the pieces and have nearly all of them in place. AWS doesn't really provide an actual error, just that it received a bad SAML request. One key thing in debugging network stuff is having some log to look at to get detailed errors about what's going on. I'm not really sure how to access that. It could be in the network tab of developer tools. If that were the case though I'd still want it to be more accessible to the common user. Yes, it would probably be an IT person setting up SSO between G Suite and AWS, but they shouldn't need to open up dev tools in order to get a useful message. 
+
+Continuing with the best practices to do list I came up with a few days ago had me digging through AWS Organizations documentation. I like how it provides an overarching view and management of several AWS accounts. That visibility is really neat, and allows an organization to have several accounts for one business. Practically speaking, thinking of [Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html) acting as the "guardrails" for an organization concerning which AWS services different accounts can use. This can be a really useful function if an organization isn't sure how it wants to handle machine learning services, or doesn't want to fragment its core IT services by allowing its child AWS Accounts to sign up for WorkMail, or something like that. While I haven't seen the consolidated billing feature of AWS Organizations yet (maybe because I don't have a bill), I can see how AWS's consolidated billing across all these accounts with Service Control Policies would allow a CTO shop to keep certain AWS services from being used until they are sure they know how the internal policies around using that service or cost projections with that service would work. I'm not sure I 100% agree with this approach, it's a little too hands on, but it would allow a CTO shop to double-check any cost projections of child accounts. Like, a child account wants to do some machine learning. Neat, what EC2 are you going to run that on? Are you sure you're going to be able to train your models fast enough on that much compute. I don't know machine learning stuff well, but I could see how a child account blows past its projections if it doesn't estimate the amount of compute it'll need to train it's models. Now devs are going to need a hardware refresh sooner after they leave their underpowered machine overnight at the office churning on training the model. But you kind of do want the flexiblility of child accounts to use a wide array of AWS's innovative offerings to resolve their local concern. I guess it's a balancing act any way you slice it if you get a little overexcited with Service Control Policies. But I like that there is that capability! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 42](#day-42)
-#### June 3rd, 2019
+#### June 4th, 2019
 **Today's Progress**:
 - Began setting up my new AWS account
 
