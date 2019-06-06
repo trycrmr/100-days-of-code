@@ -1,5 +1,33 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 44](#day-44)
+#### June 6th, 2019
+**Today's Progress**:
+- Looked into and learned more about consolidated billing
+- Learned about how to restrict access to running resources in different regions
+- Enabled billing alerts by setting up a budget
+- Followed [this blog post](https://aws.amazon.com/blogs/big-data/streamline-aws-cloudtrail-log-visualization-using-aws-glue-and-amazon-quicksight/) to process, query, and analyze CloudTrail logs
+- Configured CloudTrail to track all regions and enable log file validation
+
+**Thoughts:** Wrapped up configuring my new AWS account and stepped through a neat blog post about processing CloudTrail logs; The solution used CloudFormation, S3, Lambda, Glue, & Athena!
+
+Walking through setting up an AWS account while following as many best practices as I can has been an eye opening exercise! I'm an AWS Certified Solutions Architect - Professional and amount of different screens I've had to visit to configure all the things properly has been surprising. If I was a small business owner first coming to AWS it would be easy to get the payments set up and start spinning up EC2 instances myself. But the amount of best practices that goes into managing an AWS account for an organization quickly starts to add up! First off, there's knowing what services do what thing. Once you've got that sorted it's using them properly for provisioning access, auditing, controlling costs, and then scaling all those operations. Then it's navigating the console to configure all those things!
+
+It's worth noting the documentation also suffers from this fragmentation. I would stumble across a web page of AWS documentation that began to bring together all the best practices for setting up an AWS account. The most obvious example is [the IAM best practices page](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html?icmpid=docs_iam_console). However, they all suffered from the same issue that the best practices were limited to that one service. It makes sense that this is the case given how AWS's documentation is organized by service anyways. With that said, a link list to as many of these pages as would be relevant for someone setting up an AWS Account for the first time would help new AWS users grasp what it takes to properly manage a cloud services account. For organizations, this would help mid-level IT managers realize that following the enterprise's lead would allow for synergies across accounts, such as consolidated billing, budgets, and the capability for organization-wide CloudTrail auditing, just to mention a few gains. It would be in AWS's best interest to make it easy to stand up an account and start spinning up resources, but it would be in the user's best interest to have receive a bit more guidance on how to manage and oversee the account properly.
+
+I suppose stepping through setting up an account and accommodating as many of the best practices has beeng great experience this week. It's rare that at a job one would get to stand up an AWS account from scratch. Typically, the team would've already done that. But I am getting to the point where it's better for me to move onto different topics. My company AWS account is set up enough to start architecting under the company name securely while controlling costs. At this moment I'm thinking I'd get my hands dirty with SQS, autoscaling EC2s to ingest the SQS queues, the ops around that type of thing, then maybe pivot to AWS Kinesis from there to handle use cases with the asynchronous processing of real-time data. Onward! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 43](#day-43)
 #### June 5th, 2019
 **Today's Progress**:
