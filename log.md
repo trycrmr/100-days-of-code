@@ -1,5 +1,30 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 45](#day-45)
+#### June 7th, 2019
+**Today's Progress**:
+- Reviewed the systems design resources mentioned in [this blog post](https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f)
+- Followed up with several contacts about my recent IT work, including creating an architecture diagram 
+
+**Thoughts:** Pretty light day, but found several more resources online to grow my skills referencing this blog post! https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f
+
+Getting an offer at all five Silicon Valley companies after a week's worth on in-person interviews is an impressive feat. Rightly so, Xiaohan Zeng's blog post went viral as far as I can tell. 51k+ claps on medium and translated into three languages is quite the community validation. There is a section on how he prepared for the systems design portion of the interviews. I had to take the time to review it. This blog post has been linked on the home screen of my phone for probably a year now; I look at it whenever I'm daydreaming about how to level up my technical skills. 
+
+Surprisingly, some of the blogs were older than I expected. Xiaohan's blog post was published in 2017, but some of these blogs hadn't had a substantive post since 2016 at the latest. I didn't rule them out completely because every study has its fundamentals. Regardless, it's prudent to know how today's thinking came to be. Tracing the thought back through old blogs posts is a taxing exercise, but really solidifies understanding. 
+
+I'm realizing about once a week I have a day where I don't actually end up creating something tangible. Like, if someone random were to come up to me in the coffee shop and ask me what I'd done today, I want to be able to show them something that I think is cool. I'm proud of what I've accomplished so far doing 100 days of code, but I am alright with these days coming up once a week. It seems to arise at a point where I need to reorient my efforts, even if what I've been doing has been beneficial. It's as if something, be it my goals with my daily tasks, or something like that get out of alignment, I naturally settle back and realign with what's important to where I'm ultimately aiming. It's also Friday, and who wants to figure that out on a Friday afternoon. Save that for Monday morning with a fresh espresso! :-) 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 44](#day-44)
 #### June 6th, 2019
 **Today's Progress**:
