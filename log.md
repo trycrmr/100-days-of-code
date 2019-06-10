@@ -1,5 +1,32 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 46](#day-46)
+#### June 10th, 2019
+**Today's Progress**:
+- Read [Google Cloud's post-mortem of their outage on June 2nd](https://status.cloud.google.com/incident/cloud-networking/19009)
+- Read Chapter's 3, 5, and 6 of ["The Complete Guide to Google Interview Preparation"](http://blog.gainlo.co/)
+- Reviewed AWS Control Tower and AWS Landing Zone
+- Watched several "This is my architecture" AWS videos on Youtube
+
+**Thoughts:** Lots of reading today! Google Cloud's post-mortem, the systems design & coding portions of a guide to interviewing at Google, and overviews of AWS Control Tower & Landing Zone services! 
+
+When I opened my laptop from Friday I had several tabs open with articles I didn't end up getting to on Friday. They seemed relevant to what I was interested in today, so I dove into them.
+
+Google Cloud's post-mortem was fascinating! Occasionally these post-mortems can come across as techy, PR jargon that's meant to obscure what was a pretty straightforward issue (like a cert expiring, or something). I would say that Google Cloud's port-mortem wasn't this. It really appears to be an open breakdown of the issues that occurred from all sides. My rudimentary understanding is it boiled down to two bad configs that caused services to stop (this is by design), network control plane clusters being marked as ineligible, a bug that expanded the breadth of an impact to multiple clusters and "physical locations" (so datacenters?), a failover to prevent UX degradation that didn't last long enough for engineers to be alerted and resolve whatever the situation was, and subsequent network congestion on the same network their tooling to monitor and debug the original issue was using. So their tools to fix the issue weren't loading well/quickly. Really fascinating! It's a bummer it happened, but as a solutions architect looking to level up their skills, open post-mortems like these are a glimpse into huge production architectures, how they work, and how they can break.
+
+Chapters 3, 5, and 6 inspired me to get a concrete plan for progressing on my 100 days from here. I found the coding challenge sites I had used previously and determined my favorite resources for learning about systems. Between a few code challenges a day and some systems architecture study I should be kept organized and learning for the next few days at least :-) . 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 45](#day-45)
 #### June 7th, 2019
 **Today's Progress**:
