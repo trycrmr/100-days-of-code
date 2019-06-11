@@ -1,5 +1,35 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 47](#day-47)
+#### June 11th, 2019
+**Today's Progress**:
+- Learned about when to use Object Oriented Programming languages versus when to use Functional Programming languages
+- Read about the ["Expression Problem"](https://eli.thegreenplace.net/2016/the-expression-problem-and-its-solutions/) in programming languages
+- Investigated how to ensure servers are stateless with Node.js and Ruby on Rails applications
+- Investigated creating a graphql server using Node.js
+- Did 10 more AWS DevOps Engineer study questions
+
+**Thoughts:** Answered some questions that had been nagging me after the reading yesterday, such as when to use OOP vs FP and how to ensure stateless app servers!
+
+Today turned into several connected google sessions after thinking through what I had learned yesterday. It was nagging me that someone had mentioned in one of the articles that functional programming languages had gained popularity because it's better for maintaining a stateless codebase. A few years ago I gained some experience with Ruby on Rails, and knew scaling a Rails app could be accomplished through horizontal scaling. But Ruby being and OOP language, how did Rails accomplish stateless servers and what made functional programming languages the better option?
+
+It turns out the Ruby on Rails answer is straightforward. Each request is handled by a new instance of the Rails Controller class. So the state is only maintained through the lifespan of responding to the http request. That's pretty neat! [Avram proves this in this blog post](https://medium.com/@avram/the-state-of-your-rails-app-is-stateless-f7dea177a5f4).
+
+The "answer" to the second question is a little more nebulous to me. It's one of those answers that will get clearer over time with experience, but, right now, I'm having trouble thinking of different use cases. [This stackoverflow response](https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming) is the broadest, most applicable response. It boils down to OOP languages and concepts are best used when there are a set number of operations on things, with more things being added over time. FP languages and concepts are most effective when you have a fixed set of things, but your operations will change over time. 
+
+This has me thinking the choice between writing applications in an OOP language versus a FP language is less about writing stateless code and more about the future requirements you expect to be requested after the MVP is accomplished. It's nice to know that either will do!
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 46](#day-46)
 #### June 10th, 2019
 **Today's Progress**:
