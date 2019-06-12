@@ -1,5 +1,32 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 48](#day-48)
+#### June 12th, 2019
+**Today's Progress**:
+- Created an AWS account under my AWS Organization for specific project work
+- Created a github organization to host company repositories
+- Created a simple static site on s3
+- Researched how to set up a devops pipeline on AWS for updating a static site
+
+**Thoughts:** Getting a feel for how to use AWS's DevOps tooling to update a static site!
+
+Earlier in my 100 days of code/cloud I set up a static website on S3 that is cached using CloudFront and served over HTTPS. Now I'd like to configure a deployment pipeline with version control integration. [This great blog post describing how to implement GitFlow with AWS's Code* DevOps tooling](https://aws.amazon.com/blogs/devops/implementing-gitflow-using-aws-codepipeline-aws-codecommit-aws-codebuild-and-aws-codedeploy/) (CodeCommit, CodePipeline, CodeDeploy, CodeBuild, ...etc.? TBD?) has been a solid jumping off point so far. 
+
+It's getting difficult to think of a scenario when I wouldn't implement one of these setups as infrastructure-as-code, so there will be CloudFormation templates to spin all this up. If I see a tutorial with screenshots of the console and no link to a CloudFormation templates it frightens me. "ClickOps", as I think someone called it on a podcast, makes me think of clients saying "We have someone that knows the code/software/process/configuration/architecture/thing. They handle that.". It feels rare that someone ultimately responsible for an AWS account would take the time to audit the CloudTrail logs or review the current configurations using AWS Config. It's naive to assume they would treat CloudFormation templates the same way, have a record of them running, and be able to review the latest run with ease, but it's something to strive for! kAt least version controlling the infrastructure would give a historical record of changes to the templates, with who made those changes. Yay accountability! 
+
+Proper organizational oversight of the activities going on in different cloud accounts feels like a problem that requires significant overhead to resolve at the moment, when it should be something built in. Like, click-button enable the feature, then anyone with a particular role is able to review a dashboard of the latest configuration changes to an AWS account and is alerted when there is a certain amount of activity occurring on the clould account. Maybe I'll get into that sometime, but for now it's getting this static site devops GitFlow, infrastructure-as-code project, live, working, demoable, and ultimately, teachable. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 47](#day-47)
 #### June 11th, 2019
 **Today's Progress**:
