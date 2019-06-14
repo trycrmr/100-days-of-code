@@ -1,5 +1,37 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 49](#day-49)
+#### June 14th, 2019
+**Today's Progress**: 
+- Validated accessing a child account using a cross-account role
+- Got my hands dirty with CodeCommit
+- Configured access to a git repository hosted on CodeCommit using a cross-account role
+
+**Thoughts:** Using a cross-account role to access a CodeCommit repository via local git had my eyes crossed at times thinking it through, but it worked like the instructions said in the end! https://docs.aws.amazon.com/codecommit/latest/userguide/cross-account.html . Didn't count yesterday in spite of learning a ton after reading answers to the latest questions on reddit.com/r/aws!
+
+At this time it appears the AWS account structure for my company is a master company account with several project accounts underneath that, one project account for each online course I'll end up creating. The thinking is when that online course is published that account can host whatever example is necessary, or, ideally, have all of its resources from the course shut off, zero cost, with the architecture stored in a CloudFormation templates. There might be some CodePipeline deployment steps there was well, but I'm not familiar enough with CodePipeline to say. The costs from the sub-accounts will be paid using consolidated billing, but I'll still be able to break down the costs on a per account basis. This should scale for the time being; I think the limit of AWS accounts under AWS Organizations with 30 accounts? I might be mixing up a different limitation though. 
+
+I've settled on the idea that systems will beget courses, so instead of trying to craft the perfect course I will build a system, create a course about it, and increase complexity in the systems over time. Worst case, I'll have built several systems with courses that don't sell (but, on the bright side don't have any customer support to tend to) and have that system experience under my belt. Earlier in the week I read about interviewing at Google. The author was, apparently, a technical person that conducted those interviews at Google. They said that they expect any system prototype to take one to two weeks. That's quite the generalizaiton, but working to meet that standard I should be able to build out most systems and their course content throughout a month. 
+
+In working through this particular system, one of the first steps is storing the code in version control. I had set up a github account earlier in the week, but it feels appropriate to attempt an all AWS pipeline first. I can reconfigure things to use other version control to show how that is done in the courses. It will make things more comprehensive. Also, one would need access to my AWS account to authenticate with the CodeCommit repositories; So they are private by default. 
+
+Getting started with CodeCommit was straightforward enough. What complicated things a little was using my IAM user from my master account to access a repository hosted in a project account from my local terminal git. Fortunately, AWS had thought about this and [provided some detailed instructions(https://docs.aws.amazon.com/codecommit/latest/userguide/cross-account.html)]. I like how they presume you haven't configured the cross-account role yet. I was able to skip ahead to the last step after validating I had followed the cross-account steps as expected. 
+
+The main downside to using a cross-account role to access a CodeCommit repository is AWS does not allow connecting over SSH. That leaves HTTPS as the authentication mechanism. We'll see if this has any effect on my dev workflow, because I remember before configuring SSH with Github it got pretty annoying having to type in my username and password everytime I wanted to push or pull updates, if I remember correctly. 
+
+My eyes began to cross setting up the different accounts I wanted to use to access different AWS accounts or Github respositories using git. Now I have a company AWS account I use for updating my company AWS things, a personal AWS account for the same, and a Github account for Github repositories. I've got at least one more to incorporate with Gitlab, but now that I've gotten to this point I'm more confident adding one more. With that said, it's done! I was able to authenticate and pull from the CodeCommit repository. On Monday at the latest I'll pick up building out the system for DevOps of a static site workflow on AWS! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 48](#day-48)
 #### June 12th, 2019
 **Today's Progress**:
