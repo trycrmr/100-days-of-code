@@ -1,5 +1,35 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 50](#day-50)
+#### June 17th, 2019
+**Today's Progress**: 
+- Dug into configuring a CodePipeline...?pipeline? using CloudFormation
+- Learned a bit more about configuring S3 bucket policies
+- Deployed a simple static website with CodeCommit and CodePipeline to S3
+
+**Thoughts:** Learned about CodeBuild and set up a simple CI/CD pipeline for a deploying a static website with CodeCommit and CodePipeline to S3! 
+
+I was wondering how long it would take to get this pipeline configured. It feels like it is a really straightforward service for AWS to provide, but I had never used CodePipeline to deploy anything before. At my last job we went with Jenkins because it was an established tool around IT. We figured it would be easier for our organization to adopt its use if our group could showcase how to enabled CI/CD best practices. We used Jenkins Pipelines, which felt similar to CodeBuild's YAML file configuration to handle the instructions for processing builds. Setting up this continuous integration workflow technically could be three servers or fewer: A version control server where the repository is hosted, a server to process the build (in this case just copying some files), then a static file server. It could be accomplished on one server, but I'm pretty sure the Ops Gods of the universe will curse your existence for not segmenting the roles onto different boxes. 
+
+Today I learned that comparing Jenkins to one of AWS's Developer Tools is a misnomer. Jenkins core feature set coupled with the plugin ecosystem really covers a combination of AWS's Developer Tools used together, not just one. I also learned that deploying directly to S3 is something that [recently became an option](https://aws.amazon.com/about-aws/whats-new/2019/01/aws-codepipeline-now-supports-deploying-to-amazon-s3/)! Mentally I was approaching familiarizing myself with AWS's DevOps tooling with the most straightforward, simpliest use case. I did not expect it to be a feature that feels bolted on. 
+
+I can understand how the definition of CodeBuild and CodePipeline can conflict regarding where to put this feature. CodePipeline is by definition a continuous delivery tool, which basically tracks releases in an automated fashion (to water down AWS's definition). CodeBuild, on the other hand, is a continuous integration tool; It handles the build steps to actually deploy your application. Deploying a static site directly to S3 falls in between these two toolsets. I can see the conversation happening at AWS's HQ; Should deploying directly to S3 from version control be a CodeBuild feature or a CodePipeline feature? Especially if the teams don't overlap the product managers could have had a meeting or two figuring this out. Or it was a water cooler conversation concluding in high fives, who's to say, but if I were a betting man I'd wager this conversation happened. 
+
+Circling back, the feature to deploy a static website from version control directly to S3 feels bolted on because the configuration options to check presume there are build steps in between. This completely makes sense. In spite of the "Keep It Simple, Silly" wisdom that floats around IT, even static sites these days can have tons of build steps. I guess I was expecting the deployment target line of questioning prior to being asked about before CodeBuild was asked about. I think I'm writing in a loop though; If I had known the purpose of CodeBuild and CodePipeline prior to attempting to create this CI/CD pipeline I would have known CodeBuild is for build steps, and I don't have any build steps if I'm deploying the static files directly from a version control repository. The option to skip the CodeBuild step would've been the clear choice.  
+
+Even with static websites I'm realizing how deep the rabbit hole can go as far as configurations are concerned. Hosting static files on S3 is easy enough; Want to have your static file globally distributed using CloudFront to reduce latency? Want to capture and update your CI/CD pipeline as infrastructure-as-code? Want to follow a best practices gitflow while having your CI/CD pipeline deploy feature branches to an isolated network for review and approval away from the world? Want to have all this at the lowest price possible while sacrificing as little as possible? There is lots to do! On to tomorrow! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 49](#day-49)
 #### June 14th, 2019
 **Today's Progress**: 
