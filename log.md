@@ -1,5 +1,59 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 52](#day-52)
+#### June 19th, 2019
+**Today's Progress**: 
+- Brainstormed how to present why different environment branches exists
+- Researched how to limit access to a static website or folders hosted on an S3 bucket
+
+**Thoughts:** Dug deep into why different environments have existed in my past professional life and researched different ways to restrict access to S3 buckets! 
+
+Approaching my learning as if I would be teaching the system to someone else has me really digging into the details! I'm sure there would be opinions about what environments I use in each course and how I've followed  through on the security restrictions between environments. Instead of moving forward with building the pipelines, this has me constructing justifications as it why something could be done a certain way. 
+
+An important aspect to emphasize to folks taking Grounded IT Trainings is that many technical decisions are guided by context. Yes, there is an "ideal" way to do things, but that might not be an option with a certain workplace. This creates a grey area; When the "right" choice isn't an option the decision becomes taking the "least bad" option. Experienced teams won't let the least bad option become the status quo, but realizing it's a choice that's made for the aggregate benefit is pragmatic thinking. With the content I'm putting together I want to present several options, emphasizing the positives and negatives of each approach so viewers will be able to work back from the best to what is possible.
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
+### [Day 51](#day-51)
+#### June 18th, 2019
+**Today's Progress**: 
+- Figured out CI/CD workflow and its integration with branching strategies
+
+**Thoughts:** Read lots about branching strategies, chose then tailored one, and laid out how to integrate it with AWS's CI/CD Developer Tools!
+
+Most days I sit down feeling like I have a clear idea of what I am going to work on. Occasionally, I'll learn something early in the day that thwarts my initial plan. In this case, I realized that branching strategies end up getting tailored to whatever local context they are being used in. I was thrown by this for a bit because I want to build an online course that adheres to the best practices. How do I adhere to best practices when there really isn't a best practice, just a few frameworks for approaching the same problem? 
+
+I read about several branching strategies, taking bits from each, mixing it with my on-the-job experience, eventually settling on a tailored version that resembled my ideal branch workflow. This had to account for the different possible CI/CD pipelines I wanted to build. Most importantly, though, it had to be coherent enough for me concisely explain. 
+
+The primary tweak I added to the Gitflow branching strategy was changing the "master" and "develop" naming convention to a more semantic, flexible, and scalable naming convention. Instead of "master" each environment's branch will be env-*, with * representing whatever that environment is named. Naturally an order to which environments are updated will arise (typically testing, then staging, then production). Release branches would replace the "develop" branch. Feature branches would be named with the release they are associated with. So each release branch would end up being an integration branch for the features in that release. 
+
+There are several gains to this approach. First off, CI/CD pipelines and environments can be built around the env-* branches. Release and feature branches would clearly be separate for for code integration or development. With release planning, the onus would clearly be taken off the developers. Team leads or Managers can plan feature releases farther out, and developers can work and merge those apart from the current release branch. The feature branch could be closed after the release has been deployed. New branches after that would be bug fixes. The use of release and bug fix in the naming convention also aligns with semantic versioning. It will be clear that a feature aligns with the 0.x.0 number, while bug fixes align with the 0.0.x number. 
+
+As with any system, ideally hot fixes don't happen. They probably will, but in this workflow it is especially beneficial to avoid hot fix branches. A CodeBuild pipeline can be set up to house all the build steps to create a static bundle for the static site being deployed. Hotfixes to prod that cause build steps to fail might then cause developers to update the CodeBuild steps. However, if the same CodeBuild configuration is being used across all the environment branches, this could break the state of earlier environments. While it can be a marginal tradeoff to make, on the whole it further discourages the use of hot fix branches. 
+
+I'm enthused about the git workflow, and emailed a friend asking how customizable he felt branching strategies are impliled to be these days. I diagrammed out this branching strategy, the CI/CD workflow, and the AWS Developer Tools I'd use to implement it. Looking forward to tomorrow for sure!
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 50](#day-50)
 #### June 17th, 2019
 **Today's Progress**: 
