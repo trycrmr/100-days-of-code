@@ -1,5 +1,39 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 53](#day-53)
+#### June 21st, 2019
+**Today's Progress**: 
+- Set up a GatsbyJS repo practice building with CodeBuild
+- Authored an initial buildspec.yml file for CodeBuild
+- Learned how to get feedback on build issues within CodeBuild
+- Began iterating over buildspec.yml file
+
+**Thoughts:** Today was about familiarizing myself with CodeBuild! Began building a GatsbyJS project with CodeBuild!
+
+The feature to deploy static sites directly to S3 with CodePipeline presupposes a codebase with no build steps. Frankly, it would be pretty uncommon these days for a front-end developer to work on a website without incorporating any build tooling. They would be writing plain HTML, CSS, and JavaScript when abstractions and/or transpilers exist for all three. More importantly, techniques such as minifying plain HTML, CSS, and JavaScript to assist with performance delivering the static site over a network are quite common. While murmurs of a "back-to-basics" mindset for front-end development have been appearing on my newsfeeds, but legacy, "single page app" client-side codebases most developers will find themselves adopting will require a build step(s) before deployment. 
+
+That makes CodeBuild an essential aspect for DevOps of a static site on AWS. The service appears to act as as the master CI server that spins up build servers to perform the build steps. It asks whether you have a specific container you'd like to use to build your codebase, or if you can rely on their standard build servers. GatsbyJS requires some pretty common prerequisites and abstracts their build process into one command. It's a really solid candidate for my use case -- Incorporating a build step into a static site deployment. 
+
+So far so good! A buildspec.yml is a file CodeBuild can use for instructions on how to build a codebase presuming the buildspec.yml file is included at the top-level directory of the codebase. The documentation associated with creating a buildspec.yml file is really straightforward. At the bottom of the documentation they have a changelog of the buildspec.yml file. Apparently there has only been one minor version bump since the init! That feels like an impressive initial design to only need one minor version bump since inception. At this point I'm using feedback from the CodeBuild web console to iterate over the buildspec.yml file. Once all that is sorted I'm expecting to be able to have automated deployments, with build steps, to an S3 bucket hosting a client-side codebase! 
+
+FWIW, yesterday I took a day off from #100daysofcode because I learned of a surprising cash flow situation with the business surrounding these online trainings I'm hoping to produce. I had presumed that the training platform I'd use deposited my cut of the revenue from sales into my business's Paypal account shortly after the sale occurred (like, as soon as their system processed the sale). From what I had read up to this point the language was, in summary, "sale happens, they deposit money into your associated account". It turns out that is not the case! Initially, the training platform does nothing with the sale for 30 days because the customer can request a refund in that time. Then the training platform asks 30 days for their systems to process the sale. 
+
+It's worth noting they are processing sales from around the globe with lots of variables; They have to reconcile differences in currency, their taxes, fees from transfers to instructor accounts, couponing, analytics in their internal systems, auditing the sale for fraud from instructors, etc. . In other words, they have lots of things to cover. After those 30 days, payments to instructor's account occur from the 6th to the 8th of every month. My initial reading of the guidance that someone enrolls in my course and within minutes or hours I see a deposit into my instructor account was wrong. 
+
+I took the day to figure out what to do with that, assess the runway (i.e. savings) I have allocated to build the trainings to support myself, track my expectations appropriately, and get comfortable with reality. It was tough to focus on anything technical when in the realization smacks you in the face that you won't get paid for your work shortly after the product is purchased, but at least two months after the product is purchased! Fortunately, speaking a small business owner, I can handle this cash flow happenstance. Still following through on getting these trainings published!  
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 52](#day-52)
 #### June 19th, 2019
 **Today's Progress**: 
