@@ -1,5 +1,29 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 54](#day-54)
+#### June 22nd, 2019
+**Today's Progress**: 
+- Attended DCJS meetup
+- Chatted with a few folks about GatsbyJS
+- Learned about managing state with GatsbyJS
+- Reviewed the AWS DevOps with a static site course curriculum with Jack from DCJS
+
+**Thoughts:** Attended a DCJS meetup and learned more things about GatsbyJS!
+
+I think it's so fun to attend coding meetups and discuss with folks what they are working on! I come with a project in case things are slow for whatever reason. Today I was able to have several chats about various topics. I didn't get back to working on CodeBuild, but I can pick that up again tomorrow when there isn't a meetup on my calendar. I did notice that CodeBuild has documentation on lots, if not all of the errors it throws. That will be where I start tomorrow! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 53](#day-53)
 #### June 21st, 2019
 **Today's Progress**: 
