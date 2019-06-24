@@ -1,5 +1,30 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 55](#day-55)
+#### June 22nd, 2019
+**Today's Progress**: 
+- Debugged CodeBuild project and CodePipeline pipeline issues when deploying a GatsbyJS site to S3
+
+**Thoughts:** Working CodeBuild/CodePipeline deployments to S3 of the default GatsbyJS static site! 
+
+The issues with the deployment pipeline were all resolved with changes to the buildspec.yml. Pretty standard stuff: Updating some out-of-date paths, installing dependencies, and some shell command arguments being in the wrong order. 
+
+An assumption I made that turned out to be wrong was CodeBuild was supposed to output a build file. Rather, it couldn't "output" a directory. The [CodeBuild Build Specification Reference](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-syntax) notes that it is an option to include a directory and all the child contents, recursively. That's done by specifying `path/to/dir/**/*`. I hadn't referenced a directory with all it's child contents in this way before, so it was exciting to use a different shell command argument! 
+
+Once the static site was deployed it appears routing is not working and the GatsbyJS homepage image is being rendered from an image that's about the size of a favicon. It's really blurry. Tomorrow will consist of getting to the bottom of those problems. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 54](#day-54)
 #### June 22nd, 2019
 **Today's Progress**: 
