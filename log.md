@@ -3,9 +3,13 @@
 ### [Day 56](#day-56)
 #### June 25th, 2019
 **Today's Progress**: 
-- 
+- Debugged some issues with the GatsbyJS site that ended up being due to buildspec.yml misconfigurations
 
-**Thoughts:** 
+**Thoughts:** Resolved some buildspec.yml issues that was causing problems with the deployed GatsbyJS site! 
+
+It turned out the directory being deployed to S3 was flattening out all the files underneath it. However, when network calls are made from the client-side back to S3 as with routing and images, the expected file structure isn't there. This took moving around some configs in the buildspec.yml file. Ultimately a simple resolution. 
+
+I was surprised at one point when I attempted to kick off a build directly from CodeBuild. Apparently, the user I was signed in as doesn't have the permissions CodeBuild adopts, I guess, to perform the required tasks. If I kicked off the same build through CodePipeline, the artifacts were able to be put in the S3 bucket the previous run didn't have access to. It's intriguing in that what seemed to be similar actions taken through the console were actually run by two separate users. This is why it's essential to think about what is going on behind the console, instead of relying on "Click Ops". 
 
 **Link to work:**
 - [Grounded IT Solutions website is live!](https://groundedit.solutions) 
