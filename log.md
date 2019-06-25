@@ -1,7 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 56](#day-56)
+#### June 25th, 2019
+**Today's Progress**: 
+- 
+
+**Thoughts:** 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 55](#day-55)
-#### June 22nd, 2019
+#### June 24th, 2019
 **Today's Progress**: 
 - Debugged CodeBuild project and CodePipeline pipeline issues when deploying a GatsbyJS site to S3
 
