@@ -1,5 +1,30 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 57](#day-57)
+#### June 26th, 2019
+**Today's Progress**: 
+- Check that multiple deployments don't replace the files in the S3 bucket
+
+**Thoughts:** Confirmed a suspicion that successive deployments weren't removing files that were no longer present in the deployed repository. Investigated AWS's recommendations and alternatives!
+
+At some point yesterday I noticed the Date Modified time stamp of the files in the S3 bucket deployment target were mostly the same, but some were different. That had me concerned files that were no longer part of the latest commit in the branch being deployed were not being removed from the S3 bucket. Ideally this cruft would not exist. 
+
+It makes sense that AWS would not by default delete files from an S3 bucket. While an argument could be made that the S3 bucket could be wiped prior to the deploying the latest static files, that could result in brief, but undeniable downtime for the website. Conversely, using a caching solution such as CloudFront could further alleviate the chances a user would notice any downtime within the second or two the files were being replaced. It's the prudent move for AWS to not make a design assumption that would temporarily take a user's service offline. Besides, any time a hosting service has the permission to delete files without, at least, the confirmation of the local party, it's a sketchy situation.
+
+AWS's guidance in this situation is basically to create your own CodePipeline stage to set up the deployment target the way you would like. More mature deploymment workflows would adopt immutable deployments. Instead of modifying an existing deployment target, a new deployment target, like a server or an S3 bucket, would be created and deployed to. While that is the theoretical ideal, I'm not sure how to handle the complexity of replacing an S3 bucket when deploying a static site on AWS. It would end up being an update to Route 53, pointing an AWS ALIAS record from the domain name to the new S3 bucket url. My concern is I am not sure how this would effect any CloudFront configurations. It's possible it wouldn't, but that's why one of my next areas of focus is CloudFront! It's to be determined whether or not I visit CloudFront after working with CloudFormation to codify these static site deployment pipelines! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 56](#day-56)
 #### June 25th, 2019
 **Today's Progress**: 
