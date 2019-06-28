@@ -1,5 +1,32 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 58](#day-58)
+#### June 28th, 2019
+**Today's Progress**: 
+- Began representing static website DevOps deployment to an S3 bucket in CloudFormation
+
+**Thoughts:** Sorting out a CloudFormation CI/CD deployment of a static website! 
+
+While this operation is fairly straightforward and already had [an example CloudFormation script in the documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-east-1.html#w2ab1c23c42c13c35) I realized I had a little more to think about. When I had worked with CloudFormation example templates in my last job as a proof of concept I'd realized the provided example don't always fit the context precisely, resulting in errors or...overcomplexity (not sure that's a word). An astute review of sample CloudFormation templates could resolve oversights down the road. 
+
+When getting into the sample template I noticed the resources I already had set up wouldn't align with this template's assumptions. There were resources allocated for Route 53 when my account didn't have the hosted zone to add a record for the domain I was planning to use. This made me step back and realize several things were out of line. After a bit of thinking, instead of forcing a round peg into a square hole I opted to build out the CloudFormation template assuming it would be run in the main/parent account of my AWS Organizations situation. 
+
+Surprise! The domain I had planned to use was still hosted from my personal account! Tomorrow's challenge will be figuring out how to transfer a domain between two accounts where I'm both the owner, but with different identifiers. An easier way to say that is I'd like to transfer a domain between my personal and business accounts. I knew this was a possibility acquiring the domain prior to having my business AWS account set up, but I made that decision, and now I'm going to sort myself out of the consequences! Welcome to small business owner life! 
+
+P.S. Was fighting off a cold this week, so opted for naps or sleep instead of espresso shots yesterday. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 57](#day-57)
 #### June 26th, 2019
 **Today's Progress**: 
