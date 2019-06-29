@@ -1,5 +1,36 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 59](#day-59)
+#### June 29th, 2019
+**Today's Progress**: 
+- Reacquaited myself with CloudFormation's ["template anatomy"](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) by creating a template for cfn templates with some quick reference comments and reminders about the different sections
+- Figured out my development workflow for updating and storing CloudFormation templates
+- Structured the repo I'd use to store CloudFormation templates by laying out and documenting how I'd treat different stacks for different courses, nested stacks for those courses, and cross-stacks to be used across all courses
+
+**Thoughts:** Settling back into CloudFormation led to a worthwhile day of reading AWS docs and setting things up! Happy Saturday!
+
+Starting the day I came up with a migration plan for the moving the groundedit.solutions domain to the Grounded IT Solutions LLC AWS account. It was weighing heaviest on my mind, but after thinking it through it turns out the groundedit.solutions website might experience a little bit of downtime maybe while the name servers of the new hosted zone switch over, and will take a minor, global performance hit when associating the new CloudFront distribution with the domain via the new hosted zone. I think that's it. Those are also the last steps; There is still moving the website itself, creating the deployment workflow, and maybe codifying it with CloudFormation (if I'm feeling peckish) prior to the DNS & CDN switches that could cause some weird behavior with the website.
+
+After I had allayed those concerns I set my sights to creating the CloudFormation templates for AWS DevOps with a static site deployment. This had me revisiting best practices in organizing CloudFormation templates, using nested stacks versus cross-stacks, and the general "template anatomy" of a CloudFormation template. This deep dive in the docs was very necessary if I want to get fluent writing and debugging CloudFormation templates. 
+
+By the end of the day I had a very commented up version of AWS's initial template to use as a starter for my other CloudFormation templates. This should allow me to move very quickly creating different nested stacks, then using them in a primary CloudFormation template that brings everything together. 
+
+I'm being careful to not use "import" and "export" to describe using nested stacks. In the CloudFormation documentation import and export indicated one was using cross-stacks, which references a specific resource. An example is if you wanted to deploy everything into one VPC you would import a VPC's ID using a cross-stack reference. Then, that specific VPC will be used wherever it is imported. If you wanted a VPC with specific configurations, but not the same VPC every time, that's when one would want to reference a CloudFormation template that outputs a VPC as a nested stack. 
+
+Looking forward to tomorrow when I should start iterating over CloudFormation templates that create the AWS resources necessary for an AWS DevOps complete deployment of a static site to S3!
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 58](#day-58)
 #### June 28th, 2019
 **Today's Progress**: 
