@@ -1,5 +1,26 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 61](#day-61)
+#### July 1st, 2019
+**Today's Progress**: 
+- Iterate over latest CloudFormation template, debugging whatever issues arise
+
+**Thoughts:** Debugging day successful! Learned lots about iterating over CloudFormation templates.
+
+It turns out the stack I was attempting to deploy was failing because CloudFormation's tag syntax was wrong in the template. The thing is the syntaax I expected it to be was passing the YAML validators, and was described that way in the documentation. I submitted documentation feedback to update the example YAML snippet for an S3 bucket resource to reflect the proper tagging syntax more precisely. Unfortunately, if rollback is enabled the console wasn't depicting the specific reason the S3 bucket was not being created. When I disabled rollback the error message denoting the issue with the tags displayed. This was a super easy fix to implement, but, overall, the debugging process was subpar, and it's a bummer the bug was from a lack of clarity in the documentation. I'm really glad AWS has a feedback button for their docs to submit issues. I've only had to use it a few times, but it's times like these when I'm glad I'm able to play my part in others not bumping into the same issue I just did. 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 60](#day-60)
 #### June 30th, 2019
 **Today's Progress**: 
