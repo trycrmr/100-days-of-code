@@ -1,5 +1,31 @@
 # Terry's 100 Days Of Code - Log
 
+### [Day 60](#day-60)
+#### June 30th, 2019
+**Today's Progress**: 
+- Wrote an initial cut of a CloudFormation template that uses an S3 template as a nested stack
+- Configured a CI/CD workflow for the CloudFormation templates with CodeCommit, CodePipeline, and S3
+
+**Thoughts:** Realized I forgot to post yesterday! Really getting into a development flow with writing CloudFormation templates and configured a CI/CD workflow for my CloudFormation templates to S3!
+
+Keeping this brief becauuse I'm writing this on Day 61. The thinking that getting a directory structure sorted for nested stacks versus cross-stack references and getting reacquiated with CloudFormation's template anatomy paid significant dividends! Making a copy of my "template template", moving through each section, and having the resource reference documentation open while describing the S3 bucket configuration I wanted made creating a cut of the template really smooth. 
+
+Previous #100daysofcode experiences getting familiar with the AWS Developer tooling made setting up the CI/CD pipeline a breeze we well. Fortunately there were no issues referencing the template I wanted from CloudFormation, and it using the nested stack I wanted per the references. I basically updated the script on my local, pushed it to the CodeCommit code repository, that kicked off a CodePipeline, which deployed the updates to the S3 bucket housing my CloudFormation templates. 
+
+When I went to iterate over deploying the CloudFormation template I began running into error messages that weren't clear exactly what the problem was. Typically this means I'm looking in the wrong place for feedback on the execution. Determining that location and continuing to iterate through the issues is Day 61's tasking! 
+
+**Link to work:**
+- [Grounded IT Solutions website is live!](https://groundedit.solutions) 
+
+**Tomorrow-ish** (but really just a running list of other things I want to keep on the radar) 
+- Figure out how to configure custom subdomains of groundedit.solutions to use for S3 buckets and other resources hosted in child accounts
+- Figure out how to write test for a React app that uses Hooks
+- 15 minutes of the Patterns of Enterprise Application Architecture sporcle
+- Do some practice questions for the AWS Certified DevOps Engineer - Professional exam
+- See whether I can SSH into the EC2 when my client's SSH service is turned off
+- I'm not seeing my CloudFormation events in CloudTrail, just an AssumeRole, and things happen. I want to know why this is.
+- Upgrade primary driver to Ubuntu 19.04
+
 ### [Day 59](#day-59)
 #### June 29th, 2019
 **Today's Progress**: 
