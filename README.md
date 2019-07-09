@@ -1,5 +1,5 @@
 # I've joined the #100DaysOfCode Challenge
-A change!
+
 ## Contents
 
 * [Rules](rules.md)
